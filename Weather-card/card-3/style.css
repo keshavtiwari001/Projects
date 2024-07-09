@@ -1,0 +1,24 @@
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+body{background-color: #ffffff;}
+html{font-family: "Roboto", sans-serif;}
+
+/* main-div */
+.main-div{width: 100%; padding: 40px 70px;  display: flex; flex-wrap: wrap; flex-direction: column;  align-items: center; background-color: rgb(232, 251, 255);}
+.pages{ width: 700px;  border-radius: 20px; box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 1); margin: 20px 0px; background-color: rgb(255, 255, 255);} 
+
+.page1{background-image: linear-gradient(to right, rgba(26, 146, 255,1),rgba(26, 146, 255,0.4)); }
+.page2{background-image: linear-gradient(to right, rgb(37, 97, 247),rgb(183, 127, 218)); }
+.page3{background-image: linear-gradient(to right, rgb(2, 190, 165),rgb(139, 254, 163)); }
+
+.weather{width: 100%; padding:  15px 40px; display: flex; flex-wrap: wrap; justify-content: space-between; text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);}
+.weather-info{width: 20%; color: white;  border-right: 1px; border-left: 0; border-style: solid; border-image: linear-gradient(to bottom, rgb(58, 161, 255), #eee,rgb(58, 161, 255)) 1 100%;}
+.weather-info p{font-size: 18px; font-weight: 100;}
+.weather-info h1{font-size: 60px; margin-top: 10px; font-weight: 100;}
+
+.dl{width: 50%; padding: 25px 0px; color: white; letter-spacing: 1px; font-weight: 100;}
+
+.weather-icon{width: 20%; font-size: 80px; color: rgb(255, 255, 255); text-shadow:  0px 0px 30px rgba(0, 0, 0, 0.7);}
+
+.weather-info-1{border-style: solid; border-image: linear-gradient(to bottom, rgb(58, 161, 255), #eee,rgb(58, 161, 255)) 1 100%;}
+.weather-info-2{border-style: solid; border-image: linear-gradient(to bottom, rgb(72, 104, 240), #eee,rgb(72, 104, 240)) 1 100%;}
+.weather-info-3{border-style: solid; border-image: linear-gradient(to bottom, rgb(35, 205, 164), #eee,rgb(35, 205, 164)) 1 100%;}

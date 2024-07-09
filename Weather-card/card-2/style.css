@@ -1,0 +1,18 @@
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+body{background-color: #ffffff;}
+html{font-family: "Roboto", sans-serif;}
+
+/* main-div */
+.main-div{width: 100%;height: 100vh; padding: 50px 70px;  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+.pages{height: 550px; width: 320px;  border-radius: 20px; box-shadow: inset 0px 0px 150px rgba(0, 0, 0, 0.9); padding: 50px 0px;} 
+
+.page1{background-image: url('img/cloudy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; display: flex; align-items: center;}
+.page2{background-image: url('img/rainy.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; display: flex; align-items: end; }
+.page3{background-image: url('img/cold.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; display: flex; align-items: start;}
+
+.weather{width: 100%; padding: 30px; display: flex; flex-wrap: wrap; justify-content: space-between; text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);}
+.weather-info{width: 50%; color: white;}
+.weather-info p{font-size: 20px; text-shadow: 0px 0px 1px rgba(0, 0, 0,0.5);}
+.weather-info h1{font-size: 60px;}
+
+.weather-icon{width: 30%; font-size: 60px; color: rgb(255, 255, 255); text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.5);}

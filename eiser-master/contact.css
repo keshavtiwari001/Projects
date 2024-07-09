@@ -1,0 +1,67 @@
+*{padding: 0px; margin: 0px; box-sizing: border-box;}
+body{background-color: #ffffff;}
+html{font-family: "Roboto", sans-serif;}
+/* Header */
+header{background-color: #eaeaea; display: flex; justify-content: space-between; align-items: center; padding: 4px 5vh;}
+.header-contact{width: auto; display: flex; justify-content: space-around; align-items: center;}
+      .header-num{  width: auto; padding: 0px 2vw;}
+      .header-mail{ width: auto; }
+.inquiry{ width: 30vw; display: flex; justify-content: space-evenly; align-items: center;}
+      .inquiry-gift-card{width: 30%; border-right: 1px solid black;}
+      .inquiry-track-order{width: 40%; border-right: 1px solid black;}
+      .inquiry-Contact-us{width: 30%;}
+
+/* nav */
+.nav{width: 100%; background-color: white;display: flex; flex-wrap: wrap; justify-content: space-evenly; position: sticky;}
+.nav-logo, .nav-bar, .nav-icons{display: flex; padding: 10px 20px; }
+
+.nav-logo ,.nav-bar-ul,.nav-icons-ul{display: flex; justify-content: center; align-items: center;}
+
+.nav-bar-li,.nav-icons-li{list-style: none;}
+
+.nav-bar-a, .nav-icons-a{color: black;text-decoration: none;}
+
+.nav-bar-li,.nav-icons-li{margin: 0px 10px;}
+
+.nav-bar-li #contact{color: rgb(113, 205, 20);}
+
+.shop-category{background-color: rgb(233, 233, 233); width: 100%; padding: 60px 70px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+.shop-cate-left{width: 50%; display: flex; flex-direction: column; justify-content: center; align-items: start;}
+.shop-cate-right{width: 50%; display: flex; justify-content: right; align-items: center;}
+.shop-cate-left h1{margin: 10px 0px;}
+
+
+/* Google Location */
+.location-div{padding: 10px 50px;}
+
+/* contact-details */
+.contact-details{width: 100%; display: flex; flex-wrap: wrap; padding: 60px 50px; justify-content: space-between; } 
+
+/* Get in touch section */
+.get-in-touch{width: 60%;  ; display: flex; flex-wrap: wrap;  border-right: 1px solid rgb(225, 225, 225); padding: 0px 20px;}
+.get-in-touch-heading{width: 100%;  ; padding: 20px 0px; font-size: 32px; font-weight: 800;}
+
+.query{width: 100%;}
+#textarea{width: 100%; padding: 10px; outline: none;  margin-top: 15px; height: 200px; border: 1px solid rgb(225, 225, 225);}
+#name{width: 50%;  padding: 0px 5px; outline: none; height: 50px; margin-top: 30px; border: 1px solid rgb(225, 225, 225);}
+#email{width: 49%; padding: 0px 5px; outline: none; height: 50px;margin-top: 30px; border: 1px solid rgb(225, 225, 225);}
+#subject{width: 100%; padding: 0px 5px; outline: none; height: 50px; margin: 30px 0px; border: 1px solid rgb(225, 225, 225);}
+.btn{width: 200px; height: 50px; border: 1px solid rgb(113, 205, 20); background-color: rgb(113, 205, 20); color: white; border-radius: 5px; font-weight: 600; transition: all 0.4s;}
+.btn:hover{color: rgb(113, 205, 20); background-color: rgba(0, 0, 0, 0);}
+
+/* Right side / contacts */
+.contacts{width: 30%;}
+.contacts-in{border: 1px solid rgb(225, 225, 225);  padding: 10px 20px; width: 100%; display: flex; flex-wrap: wrap; margin: 30px 0px;}
+.fonts{width: 25%; }
+.cover{width: 75%; }
+
+
+
+
+/* LAST page STARTS here  */
+.last-page{width: 100%; border:  1px solid black; padding: 100px 70px; background-color: rgb(13, 13, 31); color: white;}
+.textarea{width: 100%; display: flex; justify-content: space-between;}
+.textarea ul li{list-style: none; line-height: 2.1;}
+.special-li{font-size: 30px; margin: 0px 0px 50px 0px; height: 60px;border-bottom: 1px solid white;  color: white;}
+ul input{height: 40px; width: 100%; padding: 0px 10px; background-color: rgb(49, 49, 64); border: 1px solid rgb(49, 49, 64); position: relative;}
+ul .subscribe{height: 35px; width: 100px; color: white; background-color: rgb(93, 167, 22); position: absolute; right: 30px; border: 1px solid rgb(93, 167, 22);}

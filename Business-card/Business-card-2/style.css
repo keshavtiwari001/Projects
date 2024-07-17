@@ -1,0 +1,6 @@
+@media screen and (width >= 393px) {
+ .main-div{background-image: linear-gradient(rgb(248, 87, 87),rgb(255, 21, 21));}
+ .profile-div{width: 396px;}
+}
+
+

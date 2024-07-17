@@ -28,7 +28,7 @@ html{font-family: "Roboto", sans-serif;}
 }
 
 @media (max-width:999px) {
-      .pages{width: 250px; height: 450px; }
+      .pages{width: 240px; height: 450px; }
       .weather-info p{font-size: 20px;}
       .weather-info h1{font-size: 40px;}
 }
@@ -53,7 +53,7 @@ html{font-family: "Roboto", sans-serif;}
 }
 
 @media (max-width:370px) {
-      .main-div{display: flex;  justify-content: center; align-items: center;}
+      .main-div{display: flex;  justify-content: center; align-items: center; padding: 10px 4px;}
       .pages{height: 380px; width: 220px;  border-radius: 20px; margin: 10px 0px;}
       .weather-info p{font-size: 12px;}
       .weather-info h1{font-size: 30px;} 

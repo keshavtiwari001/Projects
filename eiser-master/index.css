@@ -27,13 +27,15 @@ header{background-color: #eaeaea; display: flex; justify-content: space-between;
 #shopp{transition: all 0.5s; transition-delay: 1s;}
 
 
-.shop-hover{display: none; transition: all 0.5s;}
-.nav-bar-li .shop-hover-in{border: 1px solid rgb(232, 232, 232); display: flex; flex-wrap: wrap; width: 200px;  background-color: rgb(252, 252, 252);  position: absolute; top: 100%; transition: all 0.4s;} 
+.shop-hover{display: block; transition: all 0.5s;}
+.nav-bar-li .shop-hover-in{border: 1px solid rgb(232, 232, 232); display: none; flex-wrap: wrap; width: 200px;  background-color: rgb(252, 252, 252);  position: absolute; top: 100%; transition: all 0.4s;} 
 #shopp:hover .shop-hover{background-color: rgb(56, 70, 42); display: block;}
+
+
 
 .nav-bar-li .shop-hover-in a{text-decoration: none; color: black; background-color: white; margin: 5px; border-bottom: 1px solid rgb(213, 213, 213); padding: 10px 6px; width: 100%; transition: all 0.4s;}
 .nav-bar-li .shop-hover-in a:hover{ background-color: rgb(244, 244, 244); color: white;  background-color: rgb(113, 205, 20);}
-
+.shop-hover:hover .shop-hover-in {display: flex;}
 
 /* Blog/Home - IMAGE */
 .home{height: 700px; width: 100%; background-image: url('img/banner/banner-bg.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; display: flex; justify-content: start; align-items: center; padding: 0px 50px;}

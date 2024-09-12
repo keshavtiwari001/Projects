@@ -1,7 +1,11 @@
 const express = require("express");
-const blogController = require("../controllers/blogController");
+const blogs = require("../controllers/blogController");
 const router = express.Router();
 
-router.get("/", blogController.getblogs);
+router.get("/", blogs);
+router.get("/categories/:categories", blogs);
+router.get("/author/:author", blogs);
+router.get("/title/:title", blogs);
+router.get("/id/:id", blogs);
 
 module.exports = router;

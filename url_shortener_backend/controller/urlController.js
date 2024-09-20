@@ -22,7 +22,6 @@ async function handleGenerateURL(req, res) {
   if (!body.url) {
     return res.status(400).json({ error: "url is required !!" });
   }
-
   try {
     // Generate a unique short ID
     const shortId = await generateUniqueShortId();
@@ -33,7 +32,6 @@ async function handleGenerateURL(req, res) {
       redirectURL: body.url,
       visitHistory: [],
     });
-
     return res.json({ id: shortId });
   } catch (err) {
     console.error(err);

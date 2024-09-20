@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:wght@700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Poppins Font  */
+/* .poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* Playfair fonts */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+/* .playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* NavBar css */
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0px 8px 6px -6px gray;
+  --webkit-box-shadow: 0px 8px 6px -6px gray;
+  border-bottom: 0px solid gray !important;
+}
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto" sans-serif;
+  letter-spacing: 3px;
+}
+
+/* Footer */
+.footer {
+  color: white;
+  padding: 25px;
+  background-image: linear-gradient(rgb(68, 68, 68), rgb(21, 21, 21));
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.footer a:hover {
+  color: rgb(220, 220, 220);
+  border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+/* Page not found  */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(rgb(95, 95, 95), rgb(51, 51, 51));
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-top: 10px;
+
+  transition: background-image 1s;
+}
+.pnf-btn:hover {
+  background-image: linear-gradient(rgb(51, 51, 51), rgb(95, 95, 95));
+}

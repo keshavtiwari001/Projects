@@ -47,7 +47,7 @@ const teacherSchema = new mongoose.Schema({
     password: {
         type: String, required: true
     }
-});
+}, { timestamps: true, versionKey: false });
 
 const Teacher = mongoose.model('teachers', teacherSchema)
 export default Teacher

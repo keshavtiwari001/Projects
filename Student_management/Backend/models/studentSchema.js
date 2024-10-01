@@ -35,6 +35,6 @@ const studentSchema = new mongoose.Schema({
         type: String, required: true
     }
 
-})
+}, { timestamps: true, versionKey: false })
 const Student = mongoose.model('students', studentSchema)
 export default Student

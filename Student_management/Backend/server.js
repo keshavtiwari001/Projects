@@ -9,6 +9,7 @@ app.use(express.json())
 import connectDB from './config/db.js'
 import studentRoute from "./routes/studentRoute.js"
 import teacherroute from "./routes/teacherroute.js"
+import userRoute from "./routes/userRoute.js"
 
 // database connect
 connectDB();
@@ -19,6 +20,7 @@ app.get("/", (req, res) => {
 
 app.use('/student', studentRoute)
 app.use('/teacher', teacherroute)
+app.use('/new', userRoute)
 
 app.listen(PORT, () => {
     console.log(`server is listening on ${PORT}`)

@@ -123,68 +123,68 @@ export const deleteUser = async (req, res) => {
 
 }
 
-// sign UP Teacher 
-export const teacherSignup = async (req, res) => {
+// // sign UP Teacher
+// export const teacherSignup = async (req, res) => {
 
-    const { name, email, phone, address, gender, qualification, salary, experience, role, timing, technology, empID, password } = req.body;
+//     const { name, email, phone, address, gender, qualification, salary, experience, role, timing, technology, empID, password } = req.body;
 
-    // validation
-    if (!(email && password)) {
-        res.status(400).json({
-            error: "all fields are required !!"
-        })
-    }
+//     // validation
+//     if (!(email && password)) {
+//         res.status(400).json({
+//             error: "all fields are required !!"
+//         })
+//     }
 
-    const existingTeacher = await Teacher.findOne({ email });
-    if (existingTeacher) {
-        res.status(400).json({
-            message: "Teacher already exist, please login !!"
-        })
-    }
+//     const existingTeacher = await Teacher.findOne({ email });
+//     if (existingTeacher) {
+//         res.status(400).json({
+//             message: "Teacher already exist, please login !!"
+//         })
+//     }
 
-    // making password more secure 
-    const salt = bcrypt.genSaltSync(10); // salt
-    const hash = bcrypt.hashSync(password, salt); // hash
+//     // making password more secure
+//     const salt = bcrypt.genSaltSync(10); // salt
+//     const hash = bcrypt.hashSync(password, salt); // hash
 
-    const data = { name, email, phone, address, gender, qualification, salary, experience, role, timing, technology, empID, password: hash };
-    console.log(data)
-    const newTeacher = new Teacher(data);
-    await newTeacher.save();
-    res.status(201).json({
-        success: true,
-        message: "Teacher created successfully !",
-        newTeacher
-    })
+//     const data = { name, email, phone, address, gender, qualification, salary, experience, role, timing, technology, empID, password: hash };
+//     console.log(data)
+//     const newTeacher = new Teacher(data);
+//     await newTeacher.save();
+//     res.status(201).json({
+//         success: true,
+//         message: "Teacher created successfully !",
+//         newTeacher
+//     })
 
-}
+// }
 
 
-// Log in Teacher 
-export const teacherLogin = async (req, res) => {
-    const { email, password } = req.body;
+// // Log in Teacher
+// export const teacherLogin = async (req, res) => {
+//     const { email, password } = req.body;
 
-    if (!(email && password)) {
-        res.status(400).json({
-            error: "all fields are required !!"
-        })
-    }
+//     if (!(email && password)) {
+//         res.status(400).json({
+//             error: "all fields are required !!"
+//         })
+//     }
 
-    const existingTeacher = await Teacher.findOne({ email });
-    if (!existingTeacher) {
-        res.status(400).json({
-            message: "Teacher not registered, please sign up !!"
-        })
-    }
+//     const existingTeacher = await Teacher.findOne({ email });
+//     if (!existingTeacher) {
+//         res.status(400).json({
+//             message: "Teacher not registered, please sign up !!"
+//         })
+//     }
 
-    // password varify / compare while login...
-    const match = await bcrypt.compare(password, existingTeacher.password)
-    if (!match) {
-        return res.status(401).json({ message: "invalid password !" })
-    }
+//     // password varify / compare while login...
+//     const match = await bcrypt.compare(password, existingTeacher.password)
+//     if (!match) {
+//         return res.status(401).json({ message: "invalid password !" })
+//     }
 
-    const token = jwt.sign({ id: existingTeacher._id }, secret, { expiresIn: "7d" });
-    console.log('token>>>', token);
+//     const token = jwt.sign({ id: existingTeacher._id }, secret, { expiresIn: "7d" });
+//     console.log('token>>>', token);
 
-    res.json({ token, existingTeacher });
+//     res.json({ token, existingTeacher });
 
-}
+// }

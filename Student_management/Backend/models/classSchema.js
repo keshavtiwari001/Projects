@@ -1,3 +1,4 @@
+import { json } from "express";
 import mongoose from "mongoose";
 
 const classSchema = new mongoose.Schema({
@@ -7,9 +8,9 @@ const classSchema = new mongoose.Schema({
     duration: { type: Number, required: true },
     subjects: { type: [String], required: true },
     fee: { type: Number, required: true },
-    weekOff: { type: [String], required: true, },
-    numOfSeat: { type: Number, required: true },
-})
+    weekOff: { type: { json } },
+    totalSeats: { type: Number, required: true },
+}, { timestamps: true, versionKey: false })
 
 const Class = mongoose.model('Class', classSchema)
 export default Class

@@ -107,68 +107,68 @@ export const deleteUser = async (req, res) => {
 
 }
 
-// sign UP student 
-export const studentSignup = async (req, res) => {
+// // sign UP student
+// export const studentSignup = async (req, res) => {
 
-    const { email, rollNo, password, phone, address, qualification, fee, gender, name } = req.body;
+//     const { email, rollNo, password, phone, address, qualification, fee, gender, name } = req.body;
 
-    // validation
-    if (!(email && password && rollNo)) {
-        res.status(400).json({
-            error: "all fields are required !!"
-        })
-    }
+//     // validation
+//     if (!(email && password && rollNo)) {
+//         res.status(400).json({
+//             error: "all fields are required !!"
+//         })
+//     }
 
-    const existingStudent = await Student.findOne({ email });
-    if (existingStudent) {
-        res.status(400).json({
-            message: "Student already exist, please login !!"
-        })
-    }
+//     const existingStudent = await Student.findOne({ email });
+//     if (existingStudent) {
+//         res.status(400).json({
+//             message: "Student already exist, please login !!"
+//         })
+//     }
 
-    // making password more secure 
-    const salt = bcrypt.genSaltSync(10); // salt
-    const hash = bcrypt.hashSync(password, salt); // hash
+//     // making password more secure
+//     const salt = bcrypt.genSaltSync(10); // salt
+//     const hash = bcrypt.hashSync(password, salt); // hash
 
-    const data = { email, rollNo, password: hash, phone, address, qualification, fee, gender, name };
-    console.log(data)
-    const newST = new Student(data);
-    await newST.save();
-    res.status(201).json({
-        success: true,
-        message: "user created successfully !",
-        newST
-    })
+//     const data = { email, rollNo, password: hash, phone, address, qualification, fee, gender, name };
+//     console.log(data)
+//     const newST = new Student(data);
+//     await newST.save();
+//     res.status(201).json({
+//         success: true,
+//         message: "user created successfully !",
+//         newST
+//     })
 
-}
+// }
 
 
-// Log in student 
-export const studentLogin = async (req, res) => {
-    const { email, rollNo, password } = req.body;
+// // Log in student
+// export const studentLogin = async (req, res) => {
+//     const { email, rollNo, password } = req.body;
 
-    if (!(email && rollNo, password)) {
-        res.status(400).json({
-            error: "all fields are required !!"
-        })
-    }
+//     if (!(email && rollNo, password)) {
+//         res.status(400).json({
+//             error: "all fields are required !!"
+//         })
+//     }
 
-    const existingStudent = await Student.findOne({ email });
-    if (!existingStudent) {
-        res.status(400).json({
-            message: "Student not registered, please sign up !!"
-        })
-    }
+//     const existingStudent = await Student.findOne({ email });
+//     if (!existingStudent) {
+//         res.status(400).json({
+//             message: "Student not registered, please sign up !!"
+//         })
+//     }
 
-    // password varify / compare while login...
-    const match = await bcrypt.compare(password, existingStudent.password)
-    if (!match) {
-        return res.status.json({ message: "invalid password !" })
-    }
+//     // password varify / compare while login...
+//     const match = await bcrypt.compare(password, existingStudent.password)
+//     if (!match) {
+//         return res.status.json({ message: "invalid password !" })
+//     }
 
-    const token = jwt.sign({ id: existingStudent._id }, secret, { expiresIn: "7d" });
-    console.log('token>>>', token);
+//     const token = jwt.sign({ id: existingStudent._id }, secret, { expiresIn: "7d" });
+//     console.log('token>>>', token);
 
-    res.json({ token, existingStudent });
+//     res.json({ token, existingStudent });
 
-}
+// }

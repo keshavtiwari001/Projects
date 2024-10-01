@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-const secret = "asdflkj";
-import Student from "../models/studentSchema.js";
+const secret = "asdfoiu"
+import User from "../models/userSchema.js";
 
 export default async (req, res, next) => {
     try {
@@ -23,7 +23,7 @@ export default async (req, res, next) => {
         }
 
         const { id } = decode;
-        const user = await Student.findOne({ _id: id })
+        const user = await User.findOne({ _id: id })
         console.log("user >>", user)
         if (!user) {
             return res.status(401).json({ message: "no user found" });
@@ -35,4 +35,4 @@ export default async (req, res, next) => {
     } catch (error) {
         return res.status(401).json({ message: `token time out ${error} ` });
     }
-}w
+}

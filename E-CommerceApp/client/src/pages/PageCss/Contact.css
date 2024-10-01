@@ -1,0 +1,16 @@
+.contact_main {
+  padding: 10px 20px;
+  display: flex;
+  margin: 50px 0px;
+}
+
+.contact_main .left,
+.contact_main .right {
+  width: 50%;
+  padding: 0px 20px;
+}
+
+.contact_main .left {
+  background-image: url("../../../public/images/contactus.jpeg");
+  background-repeat: no-repeat;
+}

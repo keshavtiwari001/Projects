@@ -1,9 +1,10 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
+import "./PageCss/About.css";
 const About = () => {
   return (
     <Layout title={"About us - Ecomm App"}>
-      <h1>About Page</h1>
+      <div className="about_image"></div>
     </Layout>
   );
 };

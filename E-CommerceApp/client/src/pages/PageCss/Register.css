@@ -1,0 +1,17 @@
+.register {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  overflow: scroll;
+  padding: 15px 0px;
+}
+h1 {
+  margin-top: 50px;
+}
+
+form div {
+  margin: 10px 0px;
+}

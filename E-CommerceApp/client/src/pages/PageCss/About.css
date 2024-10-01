@@ -1,0 +1,7 @@
+.about_image {
+  height: 100vh;
+  border: 1px solid black;
+  background-image: url("images/about.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}

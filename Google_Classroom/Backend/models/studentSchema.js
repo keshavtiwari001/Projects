@@ -25,7 +25,7 @@ const studentSchema = new mongoose.Schema({
         type: String, required: true, enum: ['male', 'female', 'other']
     },
     rollNo: {
-        type: String, required: true, unique: true
+        type: String, unique: true
     },
     batch: { type: mongoose.Schema.Types.ObjectId, ref: 'Class' },
     joinDate: {

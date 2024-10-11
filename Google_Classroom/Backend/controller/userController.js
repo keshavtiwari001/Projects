@@ -6,9 +6,12 @@ const secret = "asdfoiu"
 // sign UP user 
 export const userSignup = async (req, res) => {
 
+    const data = req.body
+    console.log(`>>>>data>>>>>`, data);
+
     const { name, email, password, phone, role } = req.body;
 
-    // validation
+    // validation 
 
     if (!name) {
         return res.status(400).json({ error: "Name is required!" });
@@ -28,8 +31,9 @@ export const userSignup = async (req, res) => {
 
     const existinguser = await User.findOne({ email });
     if (existinguser) {
-        res.status(400).json({
-            message: "user already exist, please login !!"
+        console.log(" user already exist, please login !! ");
+        return res.status(400).json({
+            message: "user already exist, please login !!",
         })
     }
 
@@ -38,7 +42,7 @@ export const userSignup = async (req, res) => {
     const hash = bcrypt.hashSync(password, salt); // hash
 
     console.log(data)
-    const newUser = new User(data);
+    const newUser = new User({ name, email, password: hash, phone, role });
     await newUser.save();
     res.status(201).json({
         success: true,
@@ -61,11 +65,17 @@ export const userLogin = async (req, res) => {
     }
 
     const existinguser = await User.findOne({ email });
+    if (existinguser) {
+        // getting role from database
+        var userRole = existinguser.role;
+        console.log("user role >>>", userRole)
+    }
     if (!existinguser) {
         res.status(400).json({
             message: "user not registered, please signUp !!"
         })
     }
+
 
     // password varify / compare while login...
     const match = await bcrypt.compare(password, existinguser.password)
@@ -76,6 +86,6 @@ export const userLogin = async (req, res) => {
     const token = JWT.sign({ id: existinguser._id }, secret, { expiresIn: "7d" });
     console.log('token>>>', token);
 
-    res.json({ token, existinguser });
+    return res.status(200).json({ token, existinguser, userRole });
 
 }

@@ -12,18 +12,26 @@ const SideBar = () => {
             {/* start code */}
             <Sidebar>
                 <Menu>
-                    <MenuItem > Dashboard </MenuItem>
+                    <SubMenu label="Register/Login">
+                        <MenuItem> <Link to='/signup'>Sign up</Link> </MenuItem>
+                        <MenuItem> <Link to='/login'>Log in</Link> </MenuItem>
+                    </SubMenu>
+
+                    <MenuItem>
+                        <Link to='/dashboard'>Dashboard</Link>
+                    </MenuItem>
+
                     <SubMenu label="Classes">
-                        <MenuItem> List Class </MenuItem>
-                        <MenuItem> View Class </MenuItem>
+                        <MenuItem> <Link to='/listclass'>List Class</Link> </MenuItem>
+                        <MenuItem> <Link to='/viewclass'>View Class</Link> </MenuItem>
                     </SubMenu>
                     <SubMenu label="Trainers">
-                        <MenuItem>List Trainer</MenuItem>
-                        <MenuItem>View Trainer</MenuItem>
+                        <MenuItem><Link to='/listtrainer'>List Trainers</Link></MenuItem>
+                        <MenuItem><Link to='/viewtrainer'>View Trainer</Link></MenuItem>
                     </SubMenu>
                     <SubMenu label="Students">
-                        <MenuItem>List Student</MenuItem>
-                        <MenuItem>View Student</MenuItem>
+                        <MenuItem><Link to='/liststudent'>List Students</Link></MenuItem>
+                        <MenuItem><Link to='/viewstudent'>View Student</Link></MenuItem>
                     </SubMenu>
                     <MenuItem> Log Out </MenuItem>
                 </Menu>

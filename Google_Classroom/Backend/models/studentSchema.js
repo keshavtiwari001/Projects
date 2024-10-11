@@ -19,20 +19,17 @@ const studentSchema = new mongoose.Schema({
         type: String, required: true
     },
     fee: {
-        type: Number, required: true
+        type: String, required: true
     },
     gender: {
-        type: String, required: true, enum: ['male', 'female', 'other']
+        type: String, enum: ['male', 'female', 'other']
     },
     rollNo: {
-        type: String, unique: true
+        type: String
     },
     batch: { type: mongoose.Schema.Types.ObjectId, ref: 'Class' },
     joinDate: {
         type: Date, default: Date.now
-    },
-    password: {
-        type: String, required: true
     }
 
 }, { timestamps: true, versionKey: false })

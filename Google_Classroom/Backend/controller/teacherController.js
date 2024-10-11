@@ -1,53 +1,51 @@
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
-const secret = "asdflkj"
 
+import Class from "../models/classSchema.js"
 import Teacher from "../models/teacherSchema.js"
 
 export const createTeacher = async (req, res) => {
     try {
 
-        const { name, email, phone, address, gender, qualification, salary, experience, role, timing, technology, empID, password } = req.body;
-        // validation
-        if (!name) {
-            return res.send({ message: "Name is required!" });
-        }
-        if (!email) {
-            return res.send({ message: "email is required!" });
-        }
-        if (!qualification) {
-            return res.send({ message: "qualification is required!" });
-        }
-        if (!phone) {
-            return res.send({ message: "phone is required!" });
-        }
-        if (!address) {
-            return res.send({ message: "address is required!" });
-        }
-        if (!gender) {
-            return res.send({ message: "gender is required!" });
-        }
-        if (!salary) {
-            return res.send({ message: "salary is required!" });
-        }
-        if (!experience) {
-            return res.send({ message: "experience is required!" });
-        }
-        if (!role) {
-            return res.send({ message: "roll is required!" });
-        }
-        if (!timing) {
-            return res.send({ message: "timing is required!" });
-        }
-        if (!technology) {
-            return res.send({ message: "technology is required!" });
-        }
-        if (!empID) {
-            return res.send({ message: "employe id is required!" });
-        }
-        if (!password) {
-            return res.send({ message: "password is required!" });
-        }
+        const { name, email, phone, address, gender, qualification, salary, batchName, experience, role, timing, technology, joinDate } = req.body;
+        // // validation
+        // if (!name) {
+        //     return res.send({ message: "Name is required!" });
+        // }
+        // if (!email) {
+        //     return res.send({ message: "email is required!" });
+        // }
+        // if (!qualification) {
+        //     return res.send({ message: "qualification is required!" });
+        // }
+        // if (!phone) {
+        //     return res.send({ message: "phone is required!" });
+        // }
+        // if (!address) {
+        //     return res.send({ message: "address is required!" });
+        // }
+        // if (!gender) {
+        //     return res.send({ message: "gender is required!" });
+        // }
+        // if (!salary) {
+        //     return res.send({ message: "salary is required!" });
+        // }
+        // if (!experience) {
+        //     return res.send({ message: "experience is required!" });
+        // }
+        // if (!role) {
+        //     return res.send({ message: "roll is required!" });
+        // }
+        // if (!timing) {
+        //     return res.send({ message: "timing is required!" });
+        // }
+        // if (!technology) {
+        //     return res.send({ message: "technology is required!" });
+        // }
+        // if (!empID) {
+        //     return res.send({ message: "employe id is required!" });
+        // }
+        // if (!password) {
+        //     return res.send({ message: "password is required!" });
+        // }
 
 
         const data = req.body
@@ -62,7 +60,10 @@ export const createTeacher = async (req, res) => {
             });
         }
 
-        const newuser = Teacher(req.body)
+        // batch matching - populate()
+        // const batchname = 
+
+        const newuser = new Teacher(req.body)
         await newuser.save()
         res.status(201).send({
             success: true,
@@ -81,11 +82,10 @@ export const createTeacher = async (req, res) => {
     }
 }
 
+//  get trainers
 export const getTeachers = async (req, res) => {
     const teacher = await Teacher.find();
-    res.status(200).send({
-        teacher,
-    });
+    res.status(200).json(teacher);
 }
 
 export const getTeacherid = async (req, res) => {
@@ -94,9 +94,7 @@ export const getTeacherid = async (req, res) => {
     if (!(teacher)) {
         res.status(400).send({ message: "Teacher not exist !!" })
     }
-    res.status(200).send({
-        teacher,
-    });
+    res.status(200).send(teacher);
 }
 
 export const updateUser = async (req, res) => {

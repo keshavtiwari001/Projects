@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Signup from "./Varify/Signup"
 import Login from "./Varify/Login"
 
-import SideBar from './Components/aside/Sidebar'
+import SideBar from './Components/Aside/SideBar'
+
 import Dashboard from "../src/Components/Pages/Dashboard"
 
 import ListClass from "../src/Components/Pages/ListClass"
@@ -22,23 +23,26 @@ function App() {
   return (
     <div className='appDiv'>
       <SideBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path='/signup' element={<Signup />} />
-          <Route path='/login' element={<Login />} />
+      {/* <BrowserRouter> */}
+      <Routes>
+        <Route path='/' element={<Signup />} />
+        <Route path='/login' element={<Login />} />
 
-          <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/dashboard' element={<Dashboard />} />
 
-          <Route path='/listclass' element={<ListClass />} />
-          <Route path='/viewclass' element={<ViewClass />} />
+        <Route path='/listclass' element={<ListClass />} />
+        <Route path='/viewclass' element={<ViewClass />} />
 
-          <Route path='/liststudent' element={<ListStudent />} />
-          <Route path='/viewstudent' element={<ViewStudent />} />
+        <Route path='/liststudent' element={<ListStudent />} />
+        <Route path='/viewstudent' element={<ViewStudent />} />
 
-          <Route path='/listtrainer' element={<ListTrainer />} />
-          <Route path='/viewtrainer' element={<ViewTrainer />} />
-        </Routes>
-      </BrowserRouter>
+        <Route path='/listtrainer' element={<ListTrainer />} />
+        <Route path='/viewtrainer' element={<ViewTrainer />} />
+
+        <Route path='/signup' element={<Signup />} />
+        <Route path='/login' element={<Login />} />
+      </Routes>
+      {/* </BrowserRouter> */}
 
     </div>
   )

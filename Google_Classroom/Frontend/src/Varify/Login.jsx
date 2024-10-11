@@ -1,17 +1,51 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from "axios"
+import { useNavigate } from "react-router-dom"
 
 const Login = () => {
-    function handleSubmit(e) {
-        e.preventDefault();
-        console.log(email, password)
-    }
+
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const navigate = useNavigate()
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+        const data = { email, password }
+        console.log(email, password) // remove this line before live it
+        const response = await axios.post("http://localhost:7001/new/login", data);
+        console.log(response.data.existinguser.name)
+        const userName = response.data.existinguser.name;
+        sessionStorage.setItem("userName", userName);
+
+
+        if (response.status === 200) {
+            const token = response.data.token;
+            console.log("token >>", token)
+            localStorage.setItem('token', token);
+            alert("Login Successful !!")
+        }
+        if (response.data.userRole === "student") {
+            navigate("/liststudent")
+        }
+        if (response.data.userRole === "trainer") {
+            navigate("/listtrainer")
+        }
+        if (response.data.userRole === "admin") {
+            navigate("/dashboard")
+        }
+        setPassword("")
+        setEmail("")
+
+
+
+
+    }
+
 
 
     return (
-        <div>
+        <div className='login w-full'>
             {/* code start */}
 
             <form action="" onSubmit={handleSubmit} >

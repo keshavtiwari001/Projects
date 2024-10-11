@@ -44,9 +44,6 @@ const teacherSchema = new mongoose.Schema({
     empID: {
         type: String, unique: true
     },
-    password: {
-        type: String, required: true
-    }
 }, { timestamps: true, versionKey: false });
 
 const Teacher = mongoose.model('teachers', teacherSchema)

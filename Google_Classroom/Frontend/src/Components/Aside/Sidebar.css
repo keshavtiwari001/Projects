@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    overflow: hidden;
+}
 aside{
     height: 100vh;
     width: 20%;

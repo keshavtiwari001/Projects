@@ -1,4 +1,4 @@
-import jwt from "jsonwebtoken";
+import JWT from "jsonwebtoken";
 const secret = "asdfoiu"
 import User from "../models/userSchema.js";
 
@@ -16,10 +16,10 @@ export default async (req, res, next) => {
             res.status(400).json({ message: "no token provided" });
         }
 
-        const decode = jwt.verify(token, secret);
+        const decode = JWT.verify(token, secret);
         console.log("decode >>", decode)
         if (!decode) {
-            res.status(400).json({ message: "no token provided" });
+            res.status(400).json({ message: "not decode !!" });
         }
 
         const { id } = decode;
@@ -33,6 +33,6 @@ export default async (req, res, next) => {
 
 
     } catch (error) {
-        return res.status(401).json({ message: `token time out ${error} ` });
+        res.status(401).json({ message: `token time out ${error} ` });
     }
 }

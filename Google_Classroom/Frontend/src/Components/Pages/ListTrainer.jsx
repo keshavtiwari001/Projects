@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 
 const ListTrainer = () => {
     const [name, setName] = useState("")
@@ -11,11 +12,17 @@ const ListTrainer = () => {
     const [gender, setGender] = useState("")
     const [batch, setbatch] = useState("")
     const [joinDate, setJoinDate] = useState("")
-    const [password, setPassword] = useState("")
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault()
-        console.log(name, email, password, phone, address, qualification, fee, gender, batch, joinDate, password)
+        const data = { name, email, phone, address, qualification, fee, gender, batch, joinDate }
+
+        console.log("Form data >>", data);
+        const res = await axios.post("http://localhost:7001/trainer", data, { headers: { "Authorization": `Barier : ${token}` } });
+        console.log("Response data >>", res)
+        if (res.status === 200) {
+            alert("Data submitted successfully : )")
+        }
     }
 
 
@@ -116,7 +123,7 @@ const ListTrainer = () => {
                             <input
                                 type="number"
                                 className="w-full rounded-lg border border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                                placeholder="amount of course"
+                                placeholder="Salary"
                                 value={fee}
                                 onChange={(e) => setFee(e.target.value)}
                             />
@@ -132,17 +139,17 @@ const ListTrainer = () => {
                             <div class="main flex border rounded-full overflow-hidden m-2 select-none">
                                 <div class="title py-3 my-auto px-5 bg-blue-500 text-white text-sm font-semibold mr-3">Gender</div>
                                 <label class="flex radio p-2 cursor-pointer">
-                                    <input class="my-auto transform scale-125" type="radio" name="sfg" />
+                                    <input checked={gender === "male"} onChange={(e) => setGender(e.target.value)} value="male" class="my-auto transform scale-125" type="radio" name="sfg" />
                                     <div class="title px-2">male</div>
                                 </label>
 
                                 <label class="flex radio p-2 cursor-pointer">
-                                    <input class="my-auto transform scale-125" type="radio" name="sfg" />
+                                    <input checked={gender === "female"} onChange={(e) => setGender(e.target.value)} value="female" class="my-auto transform scale-125" type="radio" name="sfg" />
                                     <div class="title px-2">female</div>
                                 </label>
 
                                 <label class="flex radio p-2 cursor-pointer">
-                                    <input class="my-auto transform scale-125" type="radio" name="sfg" />
+                                    <input checked={gender === "other"} onChange={(e) => setGender(e.target.value)} value="other" class="my-auto transform scale-125" type="radio" name="sfg" />
                                     <div class="title px-2">other</div>
                                 </label>
                             </div>
@@ -175,21 +182,6 @@ const ListTrainer = () => {
                                 placeholder="Addmission Date"
                                 value={joinDate}
                                 onChange={(e) => setJoinDate(e.target.value)}
-                            />
-                        </div>
-                    </div>
-
-                    {/* Password */}
-                    <div className='w-2/3 ml-2'>
-                        <label htmlFor="password" className="sr-only">Password</label>
-
-                        <div className="relative">
-                            <input
-                                type="password"
-                                className="w-full rounded-lg border border-gray-200 p-4 pe-12 text-sm shadow-sm"
-                                placeholder="Enter password"
-                                value={password}
-                                onChange={(e) => setPassword(e.target.value)}
                             />
                         </div>
                     </div>

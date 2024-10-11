@@ -7,11 +7,11 @@ import Class from "../models/classSchema.js"
 export const createClass = async (req, res) => {
     try {
 
-        const { batch, timing, duration, subjects, fee, weekOff, totalSeats } = req.body;
+        const { batchName, timing, duration, subjects, fee, weekOff, totalSeats } = req.body;
         // validation
 
-        if (!batch) {
-            return res.send({ message: "batch is required!" });
+        if (!batchName) {
+            return res.send({ message: "batchName is required!" });
         }
         if (!timing) {
             return res.send({ message: "timing is required!" });
@@ -37,7 +37,7 @@ export const createClass = async (req, res) => {
         console.log(data)
 
         // existing class
-        const existingClass = await Class.findOne({ batch });
+        const existingClass = await Class.findOne({ batchName });
         if (existingClass) {
             return res.status(200).send({
                 success: false,
@@ -65,21 +65,17 @@ export const createClass = async (req, res) => {
 }
 
 export const getClasss = async (req, res) => {
-    const Class = await Class.find();
-    res.status(200).send({
-        Class,
-    });
+    const classes = await Class.find();
+    res.status(200).send(classes);
 }
 
 export const getClassid = async (req, res) => {
-    const ClassID = req.params.id
-    const Class = await Class.findById(ClassID);
-    if (!(Class)) {
+    const ClassID = req.params.id;
+    const classs = await Class.findById(ClassID);
+    if (!(classs)) {
         res.status(400).send({ message: "Class not exist !!" })
     }
-    res.status(200).send({
-        Class,
-    });
+    res.status(200).send(classs);
 }
 
 export const updateClass = async (req, res) => {

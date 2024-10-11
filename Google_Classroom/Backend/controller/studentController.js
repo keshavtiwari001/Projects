@@ -1,14 +1,10 @@
-import bcrypt from "bcrypt"
-import jwt from "jsonwebtoken"
-const secret = "asdflkj"
-
 import Student from "../models/studentSchema.js"
-import { response } from "express";
+// import { response } from "express";
 
 export const createStudent = async (req, res) => {
     try {
 
-        const { name, email, phone, address, fee, gender, qualification, rollNo } = req.body;
+        const { name, email, phone, address, fee, gender, qualification } = req.body;
         // validation
         if (!name) {
             return res.send({ message: "Name is required!" });
@@ -16,23 +12,21 @@ export const createStudent = async (req, res) => {
         if (!email) {
             return res.send({ message: "email is required!" });
         }
-        if (!qualification) {
-            return res.send({ message: "qualification is required!" });
-        }
+
         if (!phone) {
             return res.send({ message: "phone is required!" });
         }
         if (!address) {
             return res.send({ message: "address is required!" });
         }
+        if (!qualification) {
+            return res.send({ message: "qualification is required!" });
+        }
         if (!fee) {
             return res.send({ message: "fee is required!" });
         }
         if (!gender) {
             return res.send({ message: "gender is required!" });
-        }
-        if (!rollNo) {
-            return res.send({ message: "rollNo is required!" });
         }
 
         const data = req.body
@@ -47,7 +41,18 @@ export const createStudent = async (req, res) => {
             });
         }
 
-        const newuser = Student(req.body)
+        // roll no. 
+        async function generateRollNo() {
+            const lastStudent = await Student.findOne().sort({ rollNo: -1 }).exec();
+            const rollNum = lastStudent ? lastStudent.rollNo + 1 : 1;
+            return rollNum;
+        }
+
+        const rollNo = generateRollNo();
+
+        const datas = { name, email, phone, address, qualification, fee, gender, rollNo }
+
+        const newuser = new Student(datas)
         await newuser.save()
         res.status(201).send({
             success: true,
@@ -65,24 +70,23 @@ export const createStudent = async (req, res) => {
     }
 }
 
+// get all students
 export const getStudents = async (req, res) => {
     const student = await Student.find();
-    res.status(200).send({
-        student,
-    });
+    res.status(200).send(student);
 }
 
+// single student
 export const getStudentid = async (req, res) => {
     const stID = req.params.id
     const student = await Student.findById(stID);
     if (!(student)) {
         res.status(400).send({ message: "student not exist !!" })
     }
-    res.status(200).send({
-        student,
-    });
+    res.status(200).send(student);
 }
 
+//  update student
 export const updateUser = async (req, res) => {
     const stID = req.params.id
     const data = req.body
@@ -95,6 +99,7 @@ export const updateUser = async (req, res) => {
 
 }
 
+// delete student
 export const deleteUser = async (req, res) => {
     const stID = req.params.id
     const deletedUser = await Student.findByIdAndDelete(stID);

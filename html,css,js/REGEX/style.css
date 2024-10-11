@@ -1,0 +1,4373 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    font-family: "Open Sans", Sans-serif;
+    
+}
+body{
+    height: 100vh;
+}
+/* main - web */
+.mainWeb{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    /* width: 1024px; */
+}
+
+
+/* ------------------------| contactbar |------------------------ */
+.contactbar{
+    background-color: rgb(18, 37, 143);
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cb1{
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    cursor: pointer;
+}
+.cbPhone{
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35px;
+    color: white;
+}
+
+.cbMail{
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 10px;
+    color: white;
+}
+#cb1Icon{
+    margin: 0px 8px;
+}
+
+
+.cb2{
+    width: 40%;
+    padding: 5px 100px 5px 200px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.cb2Icons{
+    /* parent div */
+    height: 23px;
+    width: 23px;
+    background-color: rgb(65, 80, 165);
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#cb2Icon{
+    /* inner 4 icons */
+    font-size: 14px;
+    color: white;
+    border-radius: 50%;
+}
+
+/* ------------------------| NavBar |------------------------ */
+.navigationBar{
+    /* complete - bar */
+   
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+.brandLogo{
+    /* logo */
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.navbar{
+    /* navbar */
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.navUlist{
+    /* unordered-list */
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+.navList{
+    margin: 0px 15px;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.navList:hover{
+    border-bottom: 10px black;
+    box-shadow: 0px 2px 0px blue;    
+}
+
+/* ------------------------| HOME |------------------------ */
+.home{
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeText{
+    /* this is the div of all text in home page */
+    position: relative;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text1{
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+.batchDetails{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    min-width: 1095px;
+    max-width: 1600px;
+    max-height: 500px;
+}
+.bd1{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+}
+.bd2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.bd3{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.regiBtn{
+    height: 2.5rem;
+    width: 10rem;
+    border: 2px solid white;
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registerNowBTN{
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+/* ------------------------| OUR GOAL |------------------------ */
+.outerGoal{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.ourGoal{
+    width: 85%;
+    margin-top: 3rem;
+    padding: 20px 25px;
+    background-color: rgb(36, 45, 111);
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#og1{
+/* our goal */
+    height: 8rem;
+    width: 25%;
+    padding: 0px;
+}
+.ogHeading{
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 10px 5px;
+}
+.ogPara{
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 25px 5px;
+    line-height: 1.7;
+}
+
+#log2::before{
+    height: 100%;
+    width: 2px;
+    border: 2px solid rgb(255, 0, 0);
+    z-index: 2;
+}
+
+#og2{
+/* our  goal cards */
+    height: 8rem;
+    width: 75%;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.ogCard{
+    height: 120px;
+    width: 250px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+.ogCard:hover{
+    box-shadow: 0px 0px 20px rgba(255, 255, 255,0.5);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.ogCardIMG{
+    height: 80%;
+    width: 100%;
+}
+#ogCardIMG1{
+    background-image: url("images/our_goal_1.png");
+    background-size:20%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+#ogCardIMG2{
+    background-image: url("images/our_goal_2.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#ogCardIMG3{
+    background-image: url("images/our_goal_3.png");
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ogCardCont{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.og2p{
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 5px 5px;
+}
+
+/* ------------------------| WHAT WE DO |------------------------ */
+.wwd{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 40px;
+    padding: 20px;
+}
+.wwdIMG{
+    height: 450px;
+    width: 430px;
+    box-shadow: 0px 0px 10px rgb(90, 90, 90);
+
+    background-image: url("images/what_we_do.webp");
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wwdCont{
+    /* height: 450px; */
+    width: 600px;
+}
+.wwdCont1{
+    font-size: 1.2rem;
+    color: rgb(122, 122, 122);
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+.wwdCont2{
+    font-size: 2.5rem;
+    color: rgb(36, 45, 111);
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.wwdCont3{
+    font-size: 1rem;
+    color: rgb(122, 122, 122);
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.wwdButton{
+    height: 40px;
+    width: 130px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 45, 111);
+    border: 1px solid rgb(36, 45, 111);
+    border-radius: 5px;
+    margin: 20px 0px;
+    transition: all 0.3s;
+}
+.wwdButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(36, 45, 111);
+}
+/* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+.welcome{
+    width: 100%;
+    background-color: rgb(36, 45, 111);
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.wcCont{
+    width: 650px;  
+}
+.wcCont1{
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    margin: 25px 0px;
+}
+.wcCont2{
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    line-height: 1.9;
+    margin: 10px 0px;
+}
+.wcCont3{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.wcbtn1,.wcbtn2{
+    height: 40px;
+    width: 210px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 15px 0px;
+    transition: all 0.3s;
+}
+.wcbtn1{
+    color: rgb(36, 45, 111);
+    background-color: white;
+}
+.wcbtn2:hover{
+    /* btn hover */
+    cursor: pointer;
+    background-color: white;
+    color: rgb(36, 45, 111);
+}
+.wcbtn1:hover{
+    /* btn hover */
+    cursor: pointer;
+    background-color:  rgb(36, 45, 111);
+    color: white;
+}
+.wcIMG{
+    /* welcome image */
+    height: 450px;
+    width: 430px;
+    background-image: url("images/weclome_to_regex.png");
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* ------------------------| Why Choose Us |------------------------ */
+.whyUS{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    position: relative;
+}
+.whyHeading{
+    font-size: 2rem;
+    color: rgb(36, 45, 111);
+    font-weight: bold;
+}
+.whyHeading::after{
+    width: 10%;
+    content: "";
+    border: 1px solid rgb(36, 45, 111);
+    position: absolute;
+    top: 50px;
+    left: 45%;
+}
+
+.whyBOX{
+    width: 100%;
+    margin: 20px 0px;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px 150px;
+}
+.whyBOX1,.whyBOX2,.whyBOX3,.whyBOX4{
+    height: 17rem;
+    width: 21rem;
+    background-color: rgb(246, 246, 246);
+    border: 5px double rgb(36, 45, 111);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+.wBOXimg1,.wBOXimg2,.wBOXimg3,.wBOXimg4{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smallIMG{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+}
+
+.wBOXheading{
+    font-size: 1.2rem;
+    color:  rgb(36, 45, 111);
+    
+}
+.wBOXdisc{
+    font-size: 0.9rem;
+    color: rgb(65, 65, 65);
+    padding: 2px 5px;
+    text-align: center;
+    line-height: 1.6;
+}
+/* ------------------------| OUR MISSION |------------------------ */
+.mission{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.mLeft{
+    /* Left */
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 20px 0px 0px;
+}
+.missionSec{
+    /* inner section of left mission */
+    padding: 50px 10px; 
+}
+.experience{
+    /* 5 yrs of experience  */
+    font-size: 1.2rem;
+    color: rgb(111, 111, 111);
+}
+.five{
+    /* bigger five */
+    font-size: 4rem;
+    color: rgb(111, 111, 111);
+}
+.ourMissionHead{
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: rgb(36, 45, 111);
+    margin: 10px 0px;
+}
+.ourMissionPara{
+    font-size: 1rem;
+    line-height: 1.65;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: rgb(79, 79, 79);
+}
+.missionBtn{
+    /* button div */
+    width: 140px;
+    height: 40px;
+    border: 1px solid rgb(36, 45, 111);
+    border-radius: 5px 0px 5px 0px;
+    margin: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mBtn{
+    /* the main button  */
+    font-size: 0.9rem;
+    border: none;
+    color: rgb(36, 45, 111);
+    background-color: white;
+}
+
+.mRight{
+    /* Right */
+    width: 685px;
+    padding: 10px 10px;
+    margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.rightBox{
+    /* inner 4 box */
+    width: 320px;
+    padding: 10px 0px 0px 0px;
+    margin: 5px 5px;
+    position: relative;
+    box-shadow: 0px 0px 10px rgb(112, 111, 111);
+}
+.mICON{
+    /* inner incon div  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#micons{
+    /* actual inner icons */
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(36, 45, 111);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mHeading{
+    /* inner box heading */
+    font-size: 1.1rem;
+    color: rgb(36, 45, 111);
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+.mDisc{
+    /* inner discription in box */
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(122, 122, 122);
+    padding: 5px 10px;
+    line-height: 1.5;
+    margin: 0px 0px 25px 0px;
+}
+.btmLine{
+    width: 100%;
+    border: 2px solid rgb(36, 45, 111);
+    position: absolute;
+    bottom: 0px;
+}
+
+
+/* ------------------------| Know More About Our Batches |------------------------ */
+.knowMoreIMG{ 
+    /* height: 900px; */
+    width: 100%;
+    background-image: url("images/know_more_about_batch.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.knowMore1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 45, 111,0.8);
+}
+.knowMoreHeading{
+    /* heading */
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 80px 0px 30px 0px;
+}
+.knowMorePara{
+    /* paragraph */
+    color: white;
+    width: 80%;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+.knowMoreBTN{
+    /* button div */
+    margin: 0px 0px 80px 0px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourBatches{
+    /* inner button */
+    font-size: 0.9rem;
+    height: 40px;
+    width: 160px;
+    border: none;
+}
+
+/*-------------------- 2nd part --------------------  */
+.knowMore2{
+
+    padding: 0px 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    background-color: white;
+}
+.ourServ{
+    /* black div that overlapse */
+    width: 370px;
+    margin: 30px 0px;
+    padding: 20px 25px;
+    color: white;
+    background-color: rgba(8, 8, 8,0.8);
+    position: absolute;
+    top: 220px;
+    left: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.servHeading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px 0px 40px 0px;
+}
+.servHeading::after{
+    /* bottom white line */
+    width: 30%;
+    content: "";
+    border: 2px solid white;
+    position: absolute;
+    top: 70px;
+    left: 35%;
+}
+
+.ourServices{
+    /* 3 div - 3 services */
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.servIcon{
+    /* icon div */
+    height: 100%;
+}
+#servIcons{
+    /* icon main */
+    font-size: 30px;
+    margin: 0px 30px 0px 0px;
+}
+.servDisc{
+    /* main div for disc and headings */
+    margin: 0px 0px 0px 20px;
+}
+.servHead{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.servPara{
+    font-size: 0.9rem;
+    line-height: 1.3;
+    font-weight: lighter;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+/*---------- what we offer page ----------*/
+.weOffer{
+    width: 700px;
+    padding: 50px;
+    margin: 85px 0px 0px 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+}
+.weOfferHeading{
+    font-size: 2.5rem;
+    color: rgb(36, 45, 111);
+    font-weight: bolder;
+}
+.weOfferPara{
+    color: rgb(87, 87, 87);
+    margin: 20px 0px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.weOfferServices{
+    color: rgb(36, 45, 111);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.weOfferServicesPara{
+    font-size: 0.9rem;
+    color: rgb(87, 87, 87);
+    margin: 20px 0px;
+    line-height: 1.4;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.wiewServ{
+    /* button */
+    height: 35px;
+    width: 180px;
+    font-size: 0.9rem;
+    margin: 10px 0px;
+    color: white;
+    background-color: rgb(36, 45, 111);
+    border: 1px solid rgb(36, 45, 111);
+}
+
+/* ------------------------| Numbers |------------------------ */
+.numbersBG{
+    background-color: white;
+    position: absolute;
+}
+.number{
+    /* main div */
+    width: 1100px;
+    margin: 0px 185px 0px 125px;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color:  rgb(36, 45, 111);
+}
+.numbers{
+    width: 20%;
+}
+.num1{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.num2{
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* ------------------------| TRAINING SERVICES |------------------------ */
+.trainServMain{
+    width: 100%;
+    padding: 50px 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.trainLeft{
+    /* left wala */
+    width: 45%; 
+}
+.aboutTrain{
+    color: rgb(122, 122, 122);
+    font-size: 1rem;
+}
+.trainHeading{
+    font-size: 2.5rem;
+    color: rgb(36, 45, 111);
+    font-weight: bolder;
+    margin: 30px 0px;
+}
+.trainDisc{
+    color: rgb(122, 122, 122);
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 20px 0px;
+}
+.trainBTN{
+    font-size: 0.9rem;
+    height: 40px;
+    width: 180px;
+    color: white;
+    background-color: rgb(36, 45, 111);
+    border-radius: 5px;
+    border: rgb(36, 45, 111);
+    outline: none;
+    margin: 20px 0px;
+    transition: all 0.4s;
+}
+.trainBTN:hover{
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid rgb(36, 45, 111);
+}
+
+.trainRight{
+    width: 50%;
+    height: auto;
+    border: 1px solid black;
+}
+.rightImage{
+    height: 450px;
+    width: 100%;
+    background-image: url("images/what_we_do.webp");
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------| SHIVAM |------------------------ */
+.shivam{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.sLeft{
+    /* width: 25%; */
+    margin: 0px 10px 0px 100px;
+}
+.sImgBorder{
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(36, 45, 111);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sIMG{
+    width: 295px;
+    height: 295px;
+    background-image: url("images/shivam_sir.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.sRight{
+    width: 50%;
+    margin: 0px 0px 0px 50px;
+    padding: 50px 0px;
+}
+.sName{
+    font-size: 1.7rem;
+    color: rgb(36, 45, 111);
+    margin: 25px 0px;
+}
+.sRole{
+    color: rgb(161, 161, 161);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 30px 0px;
+}
+.sAbout{
+    color: rgb(96, 96, 96);
+    margin: 20px 0px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.sTagLine{
+    font-size: 0.9rem;
+    color: rgb(36, 45, 111);
+    font-weight: bold;
+    margin: 30px 0px;
+}
+.sKnowMoreBTN{
+    height: 35px; width: 130px;
+    color: white;
+    background-color: rgb(36, 45, 111);
+    border: none;
+    border-radius: 3px; 
+    transition: all 0.4s;
+    margin: 10px 0px;
+}
+.sKnowMoreBTN:hover{
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid rgb(36, 45, 111);
+}
+
+
+/* -----------------------------| EXPERTS |----------------------------- */
+.exterts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+.expertHeading{
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    margin: 50px 0px 50px 0px;
+}
+.eh1{
+    /* main heading */
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(36, 45, 111);
+}
+.eh1::after{
+    content: '';
+    width: 55%;
+    border-bottom: 1px dotted rgb(36, 45, 111);
+    position: absolute;
+    left: 28%;
+    top: 50%;
+    z-index: 1;
+}
+.seeAllBTN{
+    height: 40px;
+    width: 130px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(36, 45, 111);
+    border: 1px solid rgb(36, 45, 111);
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.seeAllBTN:hover{
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid rgb(36, 45, 111);
+}
+#arrow{
+    margin: 0px 0px 0px 10px;
+}
+.allCards{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0px 0px 20px 0px;
+}
+
+.cards1,.cards2,.cards3{
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 15px rgb(124, 124, 124);
+}
+.cards1,.cards3{
+    background-color: rgb(36, 45, 111);
+}
+.cards2{
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px 0px 320px;
+}
+
+.cardLeft{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardIMG1,.cardIMG2M,.cardIMG3{
+    height: 230px;
+    width:  230px;
+    margin: 20px 10px;
+    /* box-shadow: 0px 0px 15px black; */
+}
+.cardIMG1{
+    background-image: url("images/expert_01.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 7px 6px rgb(200, 200, 200);
+}
+.cardIMG2M{
+    background-image: url("images/expert_02.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -5px 7px 6px rgb(36, 45, 111);
+}
+.cardIMG3{
+    background-image: url("images/expert_03.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 7px 6px rgb(200, 200, 200);
+}
+
+.cardRight{
+    width: 620px;
+    padding: 20px 10px;
+
+}
+.cardHeading{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 10px 0px;
+}
+.cardRole{
+    font-size: 1.1rem;
+    color: rgb(255, 255, 255);
+    margin: 0px 0px 15px 0px;
+}
+.cardDisc{
+    font-size: 1.1rem;
+    color: rgb(207, 207, 207);
+    margin: 10px 0px 20px 0px;
+    line-height: 1.5;
+}
+/* for mohit sir */
+.cardRightM{
+    width: 620px;
+    padding: 20px 10px;
+
+}
+.cardHeadingM{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: rgb(36, 45, 111);
+    margin: 20px 0px 10px 0px;
+}
+.cardRoleM{
+    font-size: 1.1rem;
+    color: rgb(36, 45, 111);
+    margin: 0px 0px 25px 0px;
+}
+.cardDiscM{
+    font-size: 1.1rem;
+    color: rgb(122, 122, 122);
+    margin: 20px 0px 20px 0px;
+} 
+/* -----------------------------| Events Gallery |----------------------------- */
+.eventsGall{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.eventHeading{
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    margin: 50px 0px 50px 0px;
+}
+.eh1{
+    /* main heading */
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(36, 45, 111);
+}
+.eh1::after{
+    content: '';
+    width: 60%;
+    border-bottom: 1px dotted rgb(36, 45, 111);
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    z-index: 1;
+}
+.viewMoreBTN{
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(36, 45, 111);
+    border: 1px solid rgb(36, 45, 111);
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+.viewMoreBTN:hover{
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid rgb(36, 45, 111);
+}
+/* event photos */
+.epBOX{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; 
+    margin: 40px 0px 70px 0px;
+}
+.ePhotos:nth-child(n){
+    height: 189px;
+    width: 288px;
+    margin: 2px 0px;
+    transition: all 0.7s;
+}
+.ePhotos:nth-child(n):hover{
+    height: 189px;
+    width: 288px;
+    margin: 2px 0px;
+    filter: brightness(0.6);
+}
+
+.ePhotos:nth-child(1){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-21-at-1.45.11-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(2){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-21-at-1.08.28-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(3){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-21-at-1.05.24-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(4){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/WhatsApp-Image-2020-02-21-at-1.05.25-AM.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(5){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/IMG_20200123_172935-min-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(6){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/IMG_20200215_210145_143-min.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(7){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/IMG-20200201-WA0020-min.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(8){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/2023-02-19-5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(9){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/2021-04-11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(10){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/2022-07-20.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(11){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/2023-02-19-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.ePhotos:nth-child(12){
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/2023-02-19.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* -----------------------------| Placed Students |----------------------------- */
+.placedStudents{
+    /* main div of placed students */
+    background-color : rgb(246, 246, 246);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+}
+.pStHeading{
+    /* heading div */
+    width: 85%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(36, 45, 111);
+    /* padding: 10px 0px; */
+    margin: 20px 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pStHeading::after{
+    content: "";
+    width: 10%;
+    border: 1px solid rgb(36,45,111);
+    position: absolute;
+    top: 23%;
+    z-index: 2;
+}
+
+.studentSection{
+    width: 85%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.student{
+    /* individuals block of students */
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.stPhoto1{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/03/New-Project-3-150x150.webp);
+    background-size: cover;   
+    background-position: center;
+    border-radius: 100%;
+    margin: 12px 25px;
+}
+.stPhoto2{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/04/New-Project-48-150x150.webp);
+    background-size: cover;   
+    background-position: center;
+    border-radius: 100%;
+    margin: 12px 25px;
+}
+.stPhoto3{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://media.licdn.com/dms/image/C4D03AQEJXlPcFoqJWQ/profile-displayphoto-shrink_800_800/0/1653559598405?e=1715212800&v=beta&t=c6KtRPfUxO4ADc43E8uiIuF2F03pvKfUJ-7SPUOjIWo);
+    background-size: cover;   
+    background-position: center;
+    border-radius: 100%;
+    margin: 12px 25px;
+}
+.stPhoto4{
+    height: 150px;
+    width: 150px;
+    
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/03/New-Project-28-150x150.webp);
+    background-size: cover;   
+    background-position: center;
+    border-radius: 100%;
+    margin: 12px 25px;
+}
+.stPhoto5{
+    height: 150px;
+    width: 150px;
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2023/03/New-Project-33-150x150.webp);
+    background-size: cover;   
+    background-position: center;
+    border-radius: 100%;
+    margin: 12px 25px;
+}
+.stName{
+    font-size: 1rem;
+    color: rgba(113, 113, 113,0.6);
+    margin: 10px 0px;
+}
+.stRole{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(0, 0, 255,0.8);
+    margin: 10px 0px px 0px;
+}
+
+
+
+/* -----------------------------| FORUM |----------------------------- */
+.touchForum{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.touch{
+    width: 42.5%;
+    background-color: rgb(246, 246, 246);
+
+}
+.touchHeading{
+    color: rgb(36,45,111);
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin: 40px 0px 50px 0px;
+}
+.touchIMG{
+    height: 400px;
+    background-image: url("images/get_touch.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20px 0px 80px 0px;
+}
+
+.forum{
+    width: 42.5%;
+    background-color: rgb(36, 45, 111);
+    padding: 40px 10px;
+}
+.nameDIV{
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+.inputt{
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    width: 48%;
+    margin: 2px 2px;
+}
+
+.contactDIV{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.emailDIV{
+    width: 50%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+
+}
+.phnDIV{
+    width: 50%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+.inputtt{
+    width: 97%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    margin: 2px 2px;
+}
+
+.query{
+    
+    width: 100%;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px 0px;  
+
+}
+textarea{
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 250px;
+    min-height: 200px;
+    max-height: 400px;
+    padding: 10px;
+
+}
+.submitBTN{
+    width: 100px;
+    height: 35px;
+    color: rgb(36, 45, 111);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 20px 0px;
+}
+
+
+
+/* -----------------------------| ALL LINKS |----------------------------- */
+.allLinks{
+    background-color: rgb(88, 88, 88);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* link 1 */
+.links1{
+    width: 20%;
+}
+
+.linkLogo{
+    height: 60px;
+    width: 200px;
+    background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/whatsapp-dp-1-e1590747617997.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.linkPara{
+    margin: 10px 5px;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.8;
+    word-spacing: 2px;
+    padding: 0px 15px 0px 0px;
+}
+
+/* quick Links 2 */
+.links2{
+    width: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.quickLinkHEADING{
+    color: white;
+    font-size: 1.5rem;
+}
+.quickLinkHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.quickLinks{
+    margin: 30px 0px 10px 0px;
+}
+.quickLinks:nth-child(n){
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* link - 3 */
+.links3{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.whatWeOfferHEADING{
+    color: white;
+    font-size: 1.5rem;
+}
+.whatWeOfferHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.link3Links{
+    /* div of two links right and left */
+
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.linkPart1,.linkPart2{
+    margin: 0px 10px;
+    width: 50%;
+    color: white;
+    
+}
+
+.LquickLink:nth-child(n),.RquickLink:nth-child(n){
+    margin: 15px 0px;
+    line-height: 1.5;
+
+}
+
+/* Link - 4 */
+.links4{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.addressHEADING{
+    height: 50px;
+    color: white;
+    font-size: 1.5rem;
+}
+.addressHEADING::after{
+    content: "";
+    width: 70%;
+    border: 2px dotted white;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+}
+.addressLinks{
+    height: 60%;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 10px;
+    color: white;
+    margin: 0px 0px 50% 0px;
+}
+
+
+/* -----------------------------| Footer |----------------------------- */
+.footer{
+    padding: 0px 30px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+/* left footer */
+.leftFooter{
+    padding: 0px 50px;
+    width: 50%;
+    color: white;
+    font-size: 1rem;
+
+}
+.copyriht{
+    color: gray;
+}
+
+.rightFooter{
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footerIconsDIV{
+    /* parent div */
+
+    margin: 20px 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.footerIcons{
+    
+    /* parent div */
+    height: 30px;
+    width: 30px;
+    background-color: grey;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerIcon{
+    /* inner 4 icons */
+    font-size: 22px;
+    color: white;
+    border-radius: 100%;
+    background-color: black;
+}
+
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+/* -----------------------------------|| MEDIA QUERY ||----------------------------------- */
+
+/* 4K ----->>  1920-3002    */
+@media ( min-width: 1920px ) and (max-width: 3002px) {
+    /* main web */
+    .mainWeb{
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 99;
+    }
+    /* ------------------------| contactBar |------------------------ */
+    .contactbar{
+        width: 100%;
+        background-color: rgb(36, 45, 111);
+    
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    /* ------------------------| NavBar |------------------------ */
+    .navigationBar{
+        /* complete - bar */
+       
+        width: 100%;
+        background-color: white;
+        border: 1px solid black;
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    
+    /* ------------------------| HOME |------------------------ */
+    .home{
+        width: 100%;    
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* ------------------------| OUR GOAL |------------------------ */
+    .outerGoal{
+        width: 1410px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* -----------------------| WHAT WE DO |-------------------- */
+    .wwd{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .wwdIMG{
+        height: 450px;
+        width: 450px;
+        box-shadow: 0px 0px 10px rgb(90, 90, 90);
+        margin: 0px 40px;
+    
+        background-image: url("images/what_we_do.webp");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .wwdCont{
+        width: 600px; 
+        margin: 0px 40px;   
+    }
+    
+    /* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+    .welcome{
+        /* width: 1410px; */
+        width: 100%;
+        background-color: rgb(36, 45, 111);
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* ------------------------| Why Choose Us |------------------------ */
+    .whyUS{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        position: relative;
+    }
+    .whyBOX{
+        width: 100%;
+        margin: 20px 0px;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 150px;
+    }
+
+    
+    /* ------------------------| OUR MISSION |------------------------ */
+    .mission{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    
+    /* ------------------------| Know More About Our Batches |------------------------ */
+    .knowMoreIMG{ 
+        width: 100%;
+        background-image: url("images/know_more_about_batch.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .knowMore1{
+        width: 100%;
+        border: 2px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(36, 45, 111,0.8);
+    }
+    .knowMorePara{
+        /* paragraph */
+        color: white;
+        width: 1100px;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*-------------------- 2nd part --------------------  */
+    .knowMore2{
+        width: 100%;
+        padding: 0px 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: end;
+        background-color: white;
+    }
+
+    .ourServ{
+        /* black div that overlapse */
+        width: 370px;
+        margin: 30px 0px;
+        padding: 20px 25px;
+        color: white;
+        background-color: rgba(8, 8, 8,0.8);
+        position: absolute;
+        top: 240px;
+        left: 800px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    /* ------------------------| Numbers |------------------------ */
+    .numbersBG{
+        width: 100%;
+        background-color: white;
+        position: absolute;
+    }
+    .number{
+        /* main div */
+        width: 1100px;
+        margin: 0px 0px 0px 800px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color:  rgb(36, 45, 111);
+    }
+
+
+    /* ------------------------| TRAINING SERVICES |------------------------ */
+    .trainServMain{
+        width: 100%;
+        padding: 50px 120px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .trainLeft{
+        /* left wala */
+        width: 550px; 
+        margin: 0px 40px 0px 0px;
+    }
+    .trainRight{
+        width: 430px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    
+    /* ------------------------| SHIVAM |------------------------ */
+    .shivam{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sRight{
+        width: 650px;
+        margin: 0px 0px 0px 50px;
+        padding: 50px 0px;
+    }
+    
+    /* -----------------------------| EXPERTS |----------------------------- */
+    .exterts{
+        width: 52%;
+        min-width: 1410px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+    }
+    .allCards{
+        width: 85%;
+        min-width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    /* -----------------------------| Events Gallery |----------------------------- */
+    .eventsGall{
+        width: 1410px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* -----------------------------| Placed Students |----------------------------- */
+    .placedStudents{
+        /* main div of placed students */
+        width: 100%;
+        background-color : rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px;
+        position: relative;
+    }
+    
+    /* -----------------------------| FORUM |----------------------------- */
+    .touchForum{
+        width: 1410px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    
+    /* -----------------------------| ALL LINKS |----------------------------- */
+    .allLinks{
+        width: 100%;
+        background-color: rgb(88, 88, 88);
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .linkLogo{
+        height: 120px;
+        width: 300px;
+        background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/whatsapp-dp-1-e1590747617997.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    
+
+    /* quick Links 2 */
+    .quickLinks{
+        width: 80%;
+        margin: 40px 0px 10px 0px;
+    }
+
+    /* link - 4  */
+    .addressLinks{
+        width: 85%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        color: white;
+        margin: 0px 0px 50% 0px;
+    }
+    .locationADD,.phoneADD,.emailADD{
+        margin: 5px 0px;
+    }
+
+    /* -----------------------------| Footer |----------------------------- */
+    .footer{
+        width: 100%;
+        padding: 0px 30px;
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+/* Laptop/ large screens ----->>  1411-1919    */
+@media ( min-width: 1411px ) and (max-width: 1919px) {
+    /* main web */
+    .mainWeb{
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        z-index: 99;
+    }
+    /* ------------------------| contactBar |------------------------ */
+    .contactbar{
+        width: 100%;
+        background-color: rgb(36, 45, 111);
+    
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    /* ------------------------| NavBar |------------------------ */
+    .navigationBar{
+        /* complete - bar */
+       
+        width: 100%;
+        background-color: white;
+        border: 1px solid black;
+    
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    
+    /* ------------------------| HOME |------------------------ */
+    .home{
+        width: 100%;    
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* ------------------------| OUR GOAL |------------------------ */
+    .outerGoal{
+        width: 1410px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* -----------------------| WHAT WE DO |-------------------- */
+    .wwd{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .wwdIMG{
+        height: 450px;
+        width: 450px;
+        box-shadow: 0px 0px 10px rgb(90, 90, 90);
+        margin: 0px 40px;
+    
+        background-image: url("images/what_we_do.webp");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .wwdCont{
+        width: 600px; 
+        margin: 0px 40px;   
+    }
+    
+    /* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+    .welcome{
+        /* width: 1410px; */
+        width: 100%;
+        background-color: rgb(36, 45, 111);
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* ------------------------| Why Choose Us |------------------------ */
+    .whyUS{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        position: relative;
+    }
+    .whyBOX{
+        width: 100%;
+        margin: 20px 0px;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 150px;
+    }
+
+    
+    /* ------------------------| OUR MISSION |------------------------ */
+    .mission{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    
+    /* ------------------------| Know More About Our Batches |------------------------ */
+    .knowMoreIMG{ 
+        width: 100%;
+        background-image: url("images/know_more_about_batch.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .knowMore1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(36, 45, 111,0.8);
+    }
+    .knowMorePara{
+        /* paragraph */
+        color: white;
+        width: 1100px;
+        line-height: 1.6;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*-------------------- 2nd part --------------------  */
+    .knowMore2{
+        width: 100%;
+        padding: 0px 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: end;
+        background-color: white;
+    }
+
+    .ourServ{
+        /* black div that overlapse */
+        width: 370px;
+        margin: 30px 0px;
+        padding: 20px 25px;
+        color: white;
+        background-color: rgba(8, 8, 8,0.8);
+        position: absolute;
+        top: 240px;
+        left: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    /* ------------------------| Numbers |------------------------ */
+    .numbersBG{
+        width: 100%;
+        background-color: white;
+        position: absolute;
+    }
+    .number{
+        /* main div */
+        width: 1100px;
+        margin: 0px 0px 0px 250px;
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color:rgb(36, 45, 111);
+    }
+
+
+    /* ------------------------| TRAINING SERVICES |------------------------ */
+    .trainServMain{
+        width: 100%;
+        padding: 50px 120px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .trainLeft{
+        /* left wala */
+        width: 550px; 
+        margin: 0px 40px 0px 0px;
+    }
+    .trainRight{
+        width: 430px;
+        margin: 0px 0px 0px 20px;
+    }
+
+    
+    /* ------------------------| SHIVAM |------------------------ */
+    .shivam{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sRight{
+        width: 650px;
+        margin: 0px 0px 0px 50px;
+        padding: 50px 0px;
+    }
+    
+    /* -----------------------------| EXPERTS |----------------------------- */
+    .exterts{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+    }
+    .allCards{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    /* -----------------------------| Events Gallery |----------------------------- */
+    .eventsGall{
+        width: 1410px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* -----------------------------| Placed Students |----------------------------- */
+    .placedStudents{
+        /* main div of placed students */
+        width: 100%;
+        background-color : rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px;
+        position: relative;
+    }
+    
+    /* -----------------------------| FORUM |----------------------------- */
+    .touchForum{
+        width: 1410px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    
+    /* -----------------------------| ALL LINKS |----------------------------- */
+    .allLinks{
+        width: 100%;
+        background-color: rgb(88, 88, 88);
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .linkLogo{
+        height: 120px;
+        width: 300px;
+        background-image: url(https://www.regexsoftware.com/wp-content/uploads/2020/02/whatsapp-dp-1-e1590747617997.png);
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+    
+
+    /* quick Links 2 */
+    .quickLinks{
+        width: 80%;
+        margin: 40px 0px 10px 0px;
+    }
+
+    /* link - 4  */
+    .addressLinks{
+        width: 85%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 10px;
+        color: white;
+        margin: 0px 0px 50% 0px;
+    }
+    .locationADD,.phoneADD,.emailADD{
+        margin: 5px 0px;
+    }
+
+    /* -----------------------------| Footer |----------------------------- */
+    .footer{
+        width: 100%;
+        padding: 0px 30px;
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+/* laptop L ----->>  1024-1410    */
+@media ( min-width: 1024px ) and (max-width: 1410px) {
+/* main web */
+.mainWeb{
+    /* width: 1410px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 99;
+    overflow: hidden;
+}
+/* ------------------------| contactbar |------------------------ */
+.contactbar{
+    width: 1410px;
+    background-color: #242d6f;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* ------------------------| contactbar |------------------------ */
+.navigationBar{
+    /* complete - bar */
+    width: 1410px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/* ------------------------| HOME |------------------------ */
+.home{
+    width: 1410px;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------| OUR GOAL |------------------------ */
+.outerGoal{
+    width: 1410px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----------------------| WHAT WE DO |-------------------- */
+.wwd{
+    width: 1410px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    margin: 40px 0px;
+    padding: 20px;
+}
+.wwdIMG{
+    height: 340px;
+    width: 330px;
+    box-shadow: 0px 0px 10px rgb(90, 90, 90);
+    margin: 0px 50px;
+
+    background-image: url("images/what_we_do.webp");
+    background-size: 97%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wwdCont{
+    width: 400px;    
+}
+
+/* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+.welcome{
+    width: 1410px;
+    background-color: #242d6f;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* ------------------------| Why Choose Us |------------------------ */
+.whyUS{
+    width: 1408px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+    position: relative;
+}
+
+
+/* ------------------------| OUR MISSION |------------------------ */
+.mission{
+    width: 1410px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+/* ------------------------| Know More About Our Batches |------------------------ */
+.knowMoreIMG{ 
+    width: 1410px;
+    background-image: url("images/know_more_about_batch.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/*-------------------- 2nd part --------------------  */
+.knowMore2{
+    width: 1410px;
+    padding: 0px 80px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    background-color: white;
+}
+.ourServ{
+    /* black div that overlapse */
+    width: 370px;
+    margin: 30px 0px;
+    padding: 20px 25px;
+    color: white;
+    background-color: rgba(8, 8, 8,0.8);
+    position: absolute;
+    top: 250px;
+    left: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------| Numbers |------------------------ */
+.numbersBG{
+    width: 1408px;
+    background-color: white;
+    position: absolute;
+}
+
+/* ------------------------| TRAINING SERVICES |------------------------ */
+.trainServMain{
+    width: 1410px;
+    padding: 50px 80px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.trainLeft{
+    /* left wala */
+    width: 450px; 
+    margin: 0px 50px 0px 0px;
+}
+
+.trainRight{
+    width: 400px;
+    height: 400px;
+}
+.rightImage{
+    /* height: 400px;
+    width: 400px; */
+    background-image: url("images/what_we_do.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ------------------------| SHIVAM |------------------------ */
+.shivam{
+    width: 1410px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* -----------------------------| EXPERTS |----------------------------- */
+.exterts{
+    width: 1410px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(246, 246, 246);
+}
+
+/* -----------------------------| Events Gallery |----------------------------- */
+.eventsGall{
+    width: 1410px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+/* -----------------------------| Placed Students |----------------------------- */
+.placedStudents{
+    /* main div of placed students */
+    width: 1410px;
+    background-color : rgb(246, 246, 246);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+}
+
+/* -----------------------------| FORUM |----------------------------- */
+.touchForum{
+    width: 1410px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+/* -----------------------------| ALL LINKS |----------------------------- */
+.allLinks{
+    width: 1410px;
+    background-color: rgb(88, 88, 88);
+    padding: 20px 20px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* -----------------------------| Footer |----------------------------- */
+.footer{
+    width: 1410px;
+    padding: 0px 30px;
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+}
+    
+/* laptop L ----->>  768-1024   */
+@media ( min-width: 768px ) and (max-width: 1024px) {
+    body{
+        width: 100vw;
+
+    }
+    /* main web */
+    .mainWeb{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 99;
+        overflow: hidden;
+    }
+    /* ------------------------| contactbar |------------------------ */
+    .contactbar{
+        min-width: 1023px;
+        width: 100%;
+        background-color: #242d6f;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .cb1{
+        font-size: 0.9rem;
+        width: 563px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cbMail{
+        /* height: 100%; */
+        width: 20%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .cb2{
+        width: 460px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cb2Icons{
+        /* parent div */
+        height: 30px;
+        width: 30px;
+        background-color: rgb(65, 80, 165);
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 0px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #cb2Icon{
+        /* inner 4 icons */
+        font-size: 16px;
+        color: white;
+        border-radius: 50%;
+    }    
+    /* ------------------------| NavBar |------------------------ */
+    .navigationBar{
+        /* complete - bar */
+        width: 1023px;
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .navList{
+        margin: 0px 15px;
+        padding: 5px 0px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    /* ------------------------| HOME |------------------------ */
+    .home{
+        width: 1023px;
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1{
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    .bd1{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+    .bd2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .bd3{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    /* ------------------------| OUR GOAL |------------------------ */
+    .outerGoal{
+        width: 1023px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourGoal{
+        width: 85%;
+        margin-top: 3rem;
+        padding: 20px 25px;
+        background-color: rgb(36, 45, 111);
+        border: 1px solid black;
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .ogHeading{
+        font-size: 1.8rem;
+        font-weight: lighter;
+        margin: 10px 5px;
+    }
+    .ogPara{
+        font-size: 0.9rem;
+        font-weight: lighter;
+        margin: 25px 5px;
+        line-height: 1.7;
+    }
+    /* -----------------------| WHAT WE DO |-------------------- */
+    .wwd{
+        width: 1023px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .wwdIMG{
+        height: 340px;
+        width: 330px;
+        box-shadow: 0px 0px 10px rgb(90, 90, 90);
+        margin: 0px 50px;
+    
+        background-image: url("images/what_we_do.webp");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .wwdCont{
+        width: 400px;    
+    }
+    
+    /* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+    .welcome{
+        width: 1023px;
+        background-color: #242d6f;
+        color: white;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px 20px;
+    }
+    .wcCont{
+        width: 450px;  
+    }
+    .wcCont1{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        margin: 25px 0px;
+    }
+    .wcCont2{
+        font-size: 0.8rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        line-height: 1.9;
+        margin: 10px 0px;
+    }
+    .wcbtn1,.wcbtn2{
+        height: 40px;
+        width: 180px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 15px 0px;
+        transition: all 0.3s;
+    }
+    .wcIMG{
+        /* welcome image */
+        height: 400px;
+        width: 400px;
+        background-image: url("images/weclome_to_regex.png");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* ------------------------| Why Choose Us |------------------------ */
+    .whyUS{
+        width: 1023px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        position: relative;
+    }
+    .whyBOX{
+        width: 1023px;
+        margin: 20px 0px;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px 60px;
+    }
+    /* ------------------------| OUR MISSION |------------------------ */
+    .mission{
+        width: 1023px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .mLeft{
+        /* TOP */
+        width: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 0px;
+    }
+    .five{
+        /* bigger five */
+        font-size: 6rem;
+        color: rgb(111, 111, 111);
+    }
+    .experience{
+        /* 5 yrs of experience  */
+        font-size: 2rem;
+        color: rgb(111, 111, 111);
+    }
+    .ourMissionHead{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        color: rgb(36, 45, 111);
+        margin: 10px 0px;
+    }
+    .ourMissionPara{
+        font-size: 1.2rem;
+        line-height: 1.65;
+        text-align: justify;
+        letter-spacing: 1px;
+        color: rgb(79, 79, 79);
+    }
+    
+    /* ------------------------| Know More About Our Batches |------------------------ */
+    .knowMoreIMG{ 
+        width: 1023px;
+        background-image: url("images/know_more_about_batch.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    /*-------------------- 2nd part --------------------  */
+    .knowMore2{
+        width: 1023px;
+        padding: 0px 80px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: end;
+        background-color: white;
+    }
+    .ourServ{
+        /* black div that overlapse */
+        width: 350px;
+        padding: 20px 15px;
+        color: white;
+        background-color: rgba(8, 8, 8,0.8);
+        position: absolute;
+        top: 300px;
+        left: 125px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* ------------------------| Numbers |------------------------ */
+    .numbersBG{
+        width: 1023px;
+        position: absolute;
+    }
+    .number{
+        /* main div */
+        width: 80%;
+        margin: 0px 0px 0px 125px;
+        padding: 30px 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        background-color:  rgb(36, 45, 111);
+    }
+
+    /* ------------------------| TRAINING SERVICES |------------------------ */
+    .trainServMain{
+        width: 1023px;
+        /* padding: 50px 50px; */
+        margin-top: 150px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .trainLeft{
+        /* left wala */
+        width: 400px; 
+        margin: 0px 20px 0px 0px;
+    }
+    .trainHeading{
+        font-size: 2rem;
+        color: rgb(36, 45, 111);
+        font-weight: bolder;
+        margin: 30px 0px;
+    }
+    .trainDisc{
+        color: rgb(122, 122, 122);
+        line-height: 1.4;
+        font-size: 0.9rem;
+        margin: 20px 0px;
+    }
+    .trainRight{
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+    }
+
+.rightImage{
+    height: 300px;
+    width: 300px;
+    background-image: url("images/what_we_do.webp");
+    background-repeat: no-repeat;
+}
+    /* ------------------------| SHIVAM |------------------------ */
+    .shivam{
+        width: 1023px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .sLeft{
+        /* width: 25%; */
+        margin: 0px 10px 0px 80px;
+    }
+    .sName{
+        font-size: 2em;
+        color: rgb(36, 45, 111);
+        margin: 15px 0px 0px 0px;
+    }
+    .sRole{
+        color: rgb(161, 161, 161);
+        font-family: 'Times New Roman', Times, serif;
+        margin: 10px 0px 30px 0px;
+    }
+    .sKnowMoreBTN{
+        font-size: 1rem;
+        height: 45px; width: 150px;
+        color: white;
+        background-color: rgb(36, 45, 111);
+        border: none;
+        border-radius: 3px; 
+        transition: all 0.4s;
+        margin: 10px 0px;
+    }
+    /* -----------------------------| EXPERTS |----------------------------- */
+    .exterts{
+        width: 1023px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+    }
+    .eh1::after{
+        content: '';
+        width: 35%;
+        border-bottom: 1px dotted rgb(36, 45, 111);
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        z-index: 1;
+    }
+    .allCards{
+        width: 1023px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+        margin: 0px 0px 20px 0px;
+    }
+    .cards2{
+        background-color: rgb(255, 255, 255);
+        margin: 0px 0px 0px 0px;
+    }
+    
+    /* -----------------------------| Events Gallery |----------------------------- */
+    .eventsGall{
+        width: 1023px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    
+    /* -----------------------------| Placed Students |----------------------------- */
+    .placedStudents{
+        /* main div of placed students */
+        width: 1023px;
+        background-color : rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 0px;
+        position: relative;
+    }
+    .studentSection{
+        width: 1023px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .student{
+        /* individuals block of students */
+        padding: 15px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .stPhoto1,.stPhoto2,.stPhoto3,.stPhoto4,.stPhoto5{
+        height: 130px;
+        width: 130px;
+        margin: 12px 20px;
+    }
+    .stRole{
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: rgba(0, 0, 255,0.8);
+        margin: 10px 0px px 0px;
+    }
+    /* -----------------------------| FORUM |----------------------------- */
+    .touchForum{
+        width: 1023px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    
+    /* -----------------------------| ALL LINKS |----------------------------- */
+    .allLinks{
+        width: 1023px;
+        background-color: rgb(88, 88, 88);
+        padding: 20px 20px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    /* -----------------------------| Footer |----------------------------- */
+    .footer{
+        width: 1023px;
+        padding: 0px 30px;
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+    
+/* tab and big-phones ----->>  425-768   */
+@media ( min-width: 425px ) and (max-width: 768px) {
+    body{
+        width: 100vw;
+    }
+    /* main web */
+    .mainWeb{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        z-index: 99;
+        overflow: hidden;
+    }
+    /* ------------------------| contactbar |------------------------ */
+    .contactbar{
+        min-width: 768px;
+        width: 100%;
+        background-color: #242d6f;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .cb1{
+        font-size: 0.9rem;
+        width: 563px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cbMail{
+        /* height: 100%; */
+        width: 20%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .cb2{
+        width: 460px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cb2Icons{
+        /* parent div */
+        height: 30px;
+        width: 30px;
+        background-color: rgb(65, 80, 165);
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 0px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #cb2Icon{
+        /* inner 4 icons */
+        font-size: 16px;
+        color: white;
+        border-radius: 50%;
+    }    
+    /* ------------------------| NavBar |------------------------ */
+    .navigationBar{
+        /* complete - bar */
+        width: 768px;
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .brandLogo{
+        /* logo */
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navbar{
+        /* navbar */
+        width: 400px;
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navUlist{
+        /* unordered-list */
+        display: none;
+    }
+    .fa-bars{
+        font-size: 40px;
+        color: rgb(36,45,111);
+    }
+    /* ------------------------| HOME |------------------------ */
+    .home{
+        width: 768px;
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1{
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    .bd1{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+    .bd2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .bd3{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .regiBtn{
+        height: 2.5rem;
+        width: 10rem;
+        border: 2px solid white;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* ------------------------| OUR GOAL |------------------------ */
+    .outerGoal{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourGoal{
+        width: 85%;
+        margin-top: 3rem;
+        padding: 20px 25px;
+        background-color: rgb(36, 45, 111);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #og1{
+        /* our goal */
+            height: 8rem;
+            width: 100%;
+            padding: 0px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+        }
+    .ogHeading{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+    }
+    .ogPara{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        margin: 25px 5px;
+        line-height: 1.7;
+    }
+    #og2{
+        /* our  goal cards */
+            height: 200px;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ogCard{
+            height: 200px;
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s;
+        }
+        #ogCardIMG1{
+            background-size:50%;
+        }
+        #ogCardIMG2,#ogCardIMG3{
+            background-size:70%;   
+        }
+        
+    /* -----------------------| WHAT WE DO |-------------------- */
+    .wwd{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .wwdIMG{
+        height: 340px;
+        width: 330px;
+        box-shadow: 0px 0px 10px rgb(90, 90, 90);
+        margin: 0px 50px;
+    
+        background-image: url("images/what_we_do.webp");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .wwdCont{
+        width: 400px;    
+    }
+    
+    /* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+    .welcome{
+        width: 768px;
+        background-color: #242d6f;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .wcCont{
+        width: 768px; 
+        padding: 10px 20px;
+        text-align: justify;
+    }
+    .wcCont1{
+        /* width: 80%; */
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        margin: 25px 0px;
+    }
+    .wcCont2{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        line-height: 1.9;
+        margin: 10px 0px;
+    }
+    .wcCont3{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wcbtn1,.wcbtn2{
+        height: 50px;
+        width: 200px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 15px 0px;
+        transition: all 0.3s;
+    }
+    .wcIMG{
+        /* welcome image */
+        height: 400px;
+        width: 400px;
+        background-image: url("images/weclome_to_regex.png");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* ------------------------| Why Choose Us |------------------------ */
+    .whyUS{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0px;
+        position: relative;
+    }
+    .whyHeading{
+        font-size: 3rem;
+        color: rgb(36, 45, 111);
+        font-weight: bold;
+    }
+    .whyHeading::after{
+        width: 30%;
+        content: "";
+        border: 1px solid rgb(36, 45, 111);
+        position: absolute;
+        top: 70px;
+        left: 35%;
+    }
+    .whyBOX{
+        width: 768px;
+        margin: 50px 0px;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px 60px;
+    }
+    .whyBOX1,.whyBOX2,.whyBOX3,.whyBOX4{
+        height: 17rem;
+        width: 300px;
+        background-color: rgb(246, 246, 246);
+        border: 5px double rgb(36, 45, 111);
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 5px;
+    }
+
+    /* ------------------------| OUR MISSION |------------------------ */
+    .mission{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .mLeft{
+        /* TOP */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    .missionSec{
+        /* inner section of left mission */
+        padding: 50px 10px; 
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        justify-items: center;
+    }
+    .five{
+        /* bigger five */
+        font-size: 6rem;
+        color: rgb(111, 111, 111);
+        text-shadow: 6px 6px 4px rgb(176, 176, 176);
+    }
+    .experience{
+        /* 5 yrs of experience  */
+        font-size: 2rem;
+        color: rgb(111, 111, 111);
+        text-shadow: 6px 6px 4px rgb(176, 176, 176);
+    }
+    .ourMissionHead{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        color: rgb(36, 45, 111);
+        margin: 10px 0px;
+    }
+    .ourMissionPara{
+        font-size: 1.2rem;
+        line-height: 1.65;
+        text-align: justify;
+        letter-spacing: 1px;
+        color: rgb(79, 79, 79);
+    }
+    .missionBtn{
+        /* button div */
+        width: 180px;
+        height: 60px;
+        border: 1px solid rgb(36, 45, 111);
+        border-radius: 5px 0px 5px 0px;
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mBtn{
+        /* the main button  */
+        font-size: 1.2rem;
+        border: none;
+        color: rgb(36, 45, 111);
+        background-color: white;
+    }
+
+    .mRight{
+        /* bottom */
+        width: 768px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightBox{
+        /* inner 4 box */
+        width: 320px;
+        padding: 10px 0px 0px 0px;
+        margin: 10px 10px;
+        position: relative;
+        box-shadow: 0px 0px 10px rgb(112, 111, 111);
+    }
+
+    /* ------------------------| Know More About Our Batches |------------------------ */
+    .knowMoreIMG{ 
+        width: 768px;
+        background-image: url("images/know_more_about_batch.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .knowMore1{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(36, 45, 111,0.8);
+    }
+    .knowMoreHeading{
+        font-size: 2.5rem;
+    }
+    .knowMorePara{
+        /* paragraph */
+        font-size: 1.5rem;
+        
+        color: white;
+        width: 80%;
+        line-height: 1.6;
+        text-align: justify;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*-------------------- 2nd part --------------------  */
+    .knowMore2{
+        height: 950px;
+        width: 768px;
+        position: relative;   
+        display: grid;
+        grid-template-rows: 1fr 1fr;   
+        justify-content: start;
+    }
+    .ourServ{
+        width: 768px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .weOffer{
+        width: 768px;
+        position: absolute;
+        right: 0px;
+        top: 400px;
+    }
+    /* ------------------------| Numbers |------------------------ */
+    .numbersBG{
+        width: 768px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .number{
+        width: 760px;
+    }
+    .num1{
+        font-size: 1.5rem;
+    }
+    .num2{
+        font-size: 0.8rem;
+    }
+    /* ------------------------| TRAINING SERVICES |------------------------ */
+    .trainServMain{
+        width: 768px;   
+        padding: 20px;
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .trainLeft{
+        width: 400px;
+        height: 400px;
+        padding: 20px 5px;
+    }
+    .aboutTrain,.trainHeading,.trainDisc,.trainBTN{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .trainRight{
+        width: 300px;
+    }
+    .rightImage{
+        height: 300px;
+        width: 300px;
+    }
+    
+    /* ------------------------| SHIVAM |------------------------ */
+    .shivam{
+       width: 768px;
+       margin: 50px 0px 80px 0px ;
+       display: flex;
+       flex-wrap: nowrap;
+       align-items: center;
+       justify-content: center;
+    }
+    .sLeft{
+        /* width: 25%; */
+        margin: 0px 10px 0px 20px;
+    }
+    .sImgBorder{
+        width: 260px;
+        height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sIMG{
+        width: 250px;
+        height: 250px;
+    }
+    .sRight{
+        width: 65%;
+        padding: 0px 20px 0px 0px;
+    }
+    /* -----------------------------| EXPERTS |----------------------------- */
+    .exterts{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+    }
+    .eh1::after{
+        content: '';
+        width: 15%;
+        border-bottom: 1px dotted rgb(36, 45, 111);
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        z-index: 1;
+    }
+    .allCards{
+        width: 768px;
+        padding: 10px 20px;
+    }
+    .cards1,.cards2,.cards3{
+        width: 700px;
+    }
+    .cards2{
+        margin: 0px 0px 0px 20px;
+    }
+    .cardLeft{
+        width: 200px;
+    }
+    /* -----------------------------| Events Gallery |----------------------------- */
+    .eventsGall{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    .epBOX{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .ePhotos:nth-child(n){
+        height: 200px;
+        width: 300px;
+        margin: 10px 0px;
+    }
+    /* -----------------------------| Placed Students |----------------------------- */
+    .placedStudents{
+        /* main div of placed students */
+        width: 768px;   
+    }
+    .studentSection{
+        width: 768px;
+    }
+    /* -----------------------------| FORUM |----------------------------- */
+    .touchForum{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0px;
+    }
+    .touch{
+        width: 42.5%;
+    }
+    .touchIMG{
+        height: 300px;
+    }
+    .forum{
+        width: 55%;
+    }
+    /* -----------------------------| ALL LINKS |----------------------------- */
+    .allLinks{
+        width: 768px;
+    }
+    /* -----------------------------| Footer |----------------------------- */
+    .footer{
+        width: 768px;
+        padding: 0px 30px;
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+
+     
+/* big-phones ----->>  300-424   */
+@media ( min-width: 300px ) and (max-width: 424px) {
+    body{
+        width: 100vw;
+    }
+    /* main web */
+    .mainWeb{
+        width: 425px;
+        min-width: 320px;
+    }
+    /* ------------------------| contactbar |------------------------ */
+    .contactbar{
+        min-width: 425px;
+        width: 100%;
+        background-color: #242d6f;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .cb1{
+        font-size: 0.9rem;
+        width: 563px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        cursor: pointer;
+    }
+    .cbMail{
+        /* height: 100%; */
+        width: 20%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+        color: white;
+    }
+
+    .cb2{
+        width: 460px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cb2Icons{
+        /* parent div */
+        height: 30px;
+        width: 30px;
+        background-color: rgb(65, 80, 165);
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 0px 5px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #cb2Icon{
+        /* inner 4 icons */
+        font-size: 16px;
+        color: white;
+        border-radius: 50%;
+    }    
+    /* ------------------------| NavBar |------------------------ */
+    .navigationBar{
+        /* complete - bar */
+        width: 768px;
+        background-color: white;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .brandLogo{
+        /* logo */
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .navbar{
+        /* navbar */
+        width: 400px;
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: right;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .navUlist{
+        /* unordered-list */
+        display: none;
+    }
+    .fa-bars{
+        font-size: 40px;
+        color: rgb(36,45,111);
+    }
+    /* ------------------------| HOME |------------------------ */
+    .home{
+        width: 768px;
+        height: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text1{
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    .bd1{
+        font-size: 1rem;
+        margin-bottom: 50px;
+    }
+    .bd2{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .bd3{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .regiBtn{
+        height: 2.5rem;
+        width: 10rem;
+        border: 2px solid white;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    /* ------------------------| OUR GOAL |------------------------ */
+    .outerGoal{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .ourGoal{
+        width: 85%;
+        margin-top: 3rem;
+        padding: 20px 25px;
+        background-color: rgb(36, 45, 111);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #og1{
+        /* our goal */
+            height: 8rem;
+            width: 100%;
+            padding: 0px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+        }
+    .ogHeading{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: auto;
+    }
+    .ogPara{
+        font-size: 1.3rem;
+        font-weight: lighter;
+        margin: 25px 5px;
+        line-height: 1.7;
+    }
+    #og2{
+        /* our  goal cards */
+            height: 200px;
+            width: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .ogCard{
+            height: 200px;
+            width: 250px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s;
+        }
+        #ogCardIMG1{
+            background-size:50%;
+        }
+        #ogCardIMG2,#ogCardIMG3{
+            background-size:70%;   
+        }
+        
+    /* -----------------------| WHAT WE DO |-------------------- */
+    .wwd{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    
+        margin: 40px 0px;
+        padding: 20px;
+    }
+    .wwdIMG{
+        height: 340px;
+        width: 330px;
+        box-shadow: 0px 0px 10px rgb(90, 90, 90);
+        margin: 0px 50px;
+    
+        background-image: url("images/what_we_do.webp");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .wwdCont{
+        width: 400px;    
+    }
+    
+    /* ------------------------| WELCOMME TO REGEX SOFTWARE SERVICES |------------------------ */
+    .welcome{
+        width: 768px;
+        background-color: #242d6f;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .wcCont{
+        width: 768px; 
+        padding: 10px 20px;
+        text-align: justify;
+    }
+    .wcCont1{
+        /* width: 80%; */
+        font-size: 2rem;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        margin: 25px 0px;
+    }
+    .wcCont2{
+        font-size: 1rem;
+        color: rgb(255, 255, 255);
+        letter-spacing: 1px;
+        line-height: 1.9;
+        margin: 10px 0px;
+    }
+    .wcCont3{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .wcbtn1,.wcbtn2{
+        height: 50px;
+        width: 200px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0,0,0,0);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 15px 0px;
+        transition: all 0.3s;
+    }
+    .wcIMG{
+        /* welcome image */
+        height: 400px;
+        width: 400px;
+        background-image: url("images/weclome_to_regex.png");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    /* ------------------------| Why Choose Us |------------------------ */
+    .whyUS{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0px;
+        position: relative;
+    }
+    .whyHeading{
+        font-size: 3rem;
+        color: rgb(36, 45, 111);
+        font-weight: bold;
+    }
+    .whyHeading::after{
+        width: 30%;
+        content: "";
+        border: 1px solid rgb(36, 45, 111);
+        position: absolute;
+        top: 70px;
+        left: 35%;
+    }
+    .whyBOX{
+        width: 768px;
+        margin: 50px 0px;
+        background-color: rgb(246, 246, 246);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 40px 60px;
+    }
+    .whyBOX1,.whyBOX2,.whyBOX3,.whyBOX4{
+        height: 17rem;
+        width: 300px;
+        background-color: rgb(246, 246, 246);
+        border: 5px double rgb(36, 45, 111);
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 5px;
+    }
+
+    /* ------------------------| OUR MISSION |------------------------ */
+    .mission{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+    .mLeft{
+        /* TOP */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+    .missionSec{
+        /* inner section of left mission */
+        padding: 50px 10px; 
+        display: grid;
+        grid-template-rows: 1fr 1fr 2fr;
+        justify-items: center;
+    }
+    .five{
+        /* bigger five */
+        font-size: 6rem;
+        color: rgb(111, 111, 111);
+        text-shadow: 6px 6px 4px rgb(176, 176, 176);
+    }
+    .experience{
+        /* 5 yrs of experience  */
+        font-size: 2rem;
+        color: rgb(111, 111, 111);
+        text-shadow: 6px 6px 4px rgb(176, 176, 176);
+    }
+    .ourMissionHead{
+        font-size: 2.8rem;
+        font-weight: bolder;
+        color: rgb(36, 45, 111);
+        margin: 10px 0px;
+    }
+    .ourMissionPara{
+        font-size: 1.2rem;
+        line-height: 1.65;
+        text-align: justify;
+        letter-spacing: 1px;
+        color: rgb(79, 79, 79);
+    }
+    .missionBtn{
+        /* button div */
+        width: 180px;
+        height: 60px;
+        border: 1px solid rgb(36, 45, 111);
+        border-radius: 5px 0px 5px 0px;
+        margin: 20px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mBtn{
+        /* the main button  */
+        font-size: 1.2rem;
+        border: none;
+        color: rgb(36, 45, 111);
+        background-color: white;
+    }
+
+    .mRight{
+        /* bottom */
+        width: 768px;
+        padding: 10px 10px;
+        margin: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .rightBox{
+        /* inner 4 box */
+        width: 320px;
+        padding: 10px 0px 0px 0px;
+        margin: 10px 10px;
+        position: relative;
+        box-shadow: 0px 0px 10px rgb(112, 111, 111);
+    }
+
+    /* ------------------------| Know More About Our Batches |------------------------ */
+    .knowMoreIMG{ 
+        width: 768px;
+        background-image: url("images/know_more_about_batch.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .knowMore1{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(36, 45, 111,0.8);
+    }
+    .knowMoreHeading{
+        font-size: 2.5rem;
+    }
+    .knowMorePara{
+        /* paragraph */
+        font-size: 1.5rem;
+        
+        color: white;
+        width: 80%;
+        line-height: 1.6;
+        text-align: justify;
+        margin: 0px 0px 20px 0px;
+    }
+
+    /*-------------------- 2nd part --------------------  */
+    .knowMore2{
+        height: 950px;
+        width: 768px;
+        position: relative;   
+        display: grid;
+        grid-template-rows: 1fr 1fr;   
+        justify-content: start;
+    }
+    .ourServ{
+        width: 768px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .weOffer{
+        width: 768px;
+        position: absolute;
+        right: 0px;
+        top: 400px;
+    }
+    /* ------------------------| Numbers |------------------------ */
+    .numbersBG{
+        width: 768px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .number{
+        width: 760px;
+    }
+    .num1{
+        font-size: 1.5rem;
+    }
+    .num2{
+        font-size: 0.8rem;
+    }
+    /* ------------------------| TRAINING SERVICES |------------------------ */
+    .trainServMain{
+        width: 768px;   
+        padding: 20px;
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .trainLeft{
+        width: 400px;
+        height: 400px;
+        padding: 20px 5px;
+    }
+    .aboutTrain,.trainHeading,.trainDisc,.trainBTN{
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .trainRight{
+        width: 300px;
+    }
+    .rightImage{
+        height: 300px;
+        width: 300px;
+    }
+    
+    /* ------------------------| SHIVAM |------------------------ */
+    .shivam{
+       width: 768px;
+       margin: 50px 0px 80px 0px ;
+       display: flex;
+       flex-wrap: nowrap;
+       align-items: center;
+       justify-content: center;
+    }
+    .sLeft{
+        /* width: 25%; */
+        margin: 0px 10px 0px 20px;
+    }
+    .sImgBorder{
+        width: 260px;
+        height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sIMG{
+        width: 250px;
+        height: 250px;
+    }
+    .sRight{
+        width: 65%;
+        padding: 0px 20px 0px 0px;
+    }
+    /* -----------------------------| EXPERTS |----------------------------- */
+    .exterts{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        background-color: rgb(246, 246, 246);
+    }
+    .eh1::after{
+        content: '';
+        width: 15%;
+        border-bottom: 1px dotted rgb(36, 45, 111);
+        position: absolute;
+        left: 55%;
+        top: 50%;
+        z-index: 1;
+    }
+    .allCards{
+        width: 768px;
+        padding: 10px 20px;
+    }
+    .cards1,.cards2,.cards3{
+        width: 700px;
+    }
+    .cards2{
+        margin: 0px 0px 0px 20px;
+    }
+    .cardLeft{
+        width: 200px;
+    }
+    /* -----------------------------| Events Gallery |----------------------------- */
+    .eventsGall{
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+    }
+    .epBOX{
+        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .ePhotos:nth-child(n){
+        height: 200px;
+        width: 300px;
+        margin: 10px 0px;
+    }
+    /* -----------------------------| Placed Students |----------------------------- */
+    .placedStudents{
+        /* main div of placed students */
+        width: 768px;   
+    }
+    .studentSection{
+        width: 768px;
+    }
+    /* -----------------------------| FORUM |----------------------------- */
+    .touchForum{
+        width: 768px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 50px 0px;
+    }
+    .touch{
+        width: 42.5%;
+    }
+    .touchIMG{
+        height: 300px;
+    }
+    .forum{
+        width: 55%;
+    }
+    /* -----------------------------| ALL LINKS |----------------------------- */
+    .allLinks{
+        width: 768px;
+    }
+    /* -----------------------------| Footer |----------------------------- */
+    .footer{
+        width: 768px;
+        padding: 0px 30px;
+        background-color: rgb(54, 54, 54);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    }   
